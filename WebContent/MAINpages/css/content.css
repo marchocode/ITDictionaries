@@ -1,0 +1,204 @@
+/*
+* @Author: Marte
+* @Date:   2018-06-18 10:05:54
+* @Last Modified by:   Marte
+* @Last Modified time: 2018-06-24 23:56:09
+*/
+*{
+    margin:0;
+    padding:0;
+}
+body {
+}
+.cont {
+    width: 1366px;
+    margin: 0 auto;
+}
+.cont_top {
+    width: 100%;
+    height:100px;
+    background:url("../img/学生信息管理系统_01.jpg") no-repeat;
+    background-size: cover;
+    position:relative;
+}
+.top_butt {
+    width: 100%;
+    height:30px;
+    line-height: 30px;
+    background-color: #91DCFF;
+
+}
+.main {
+    height:480px;
+    background-color: #E5F4FD;
+}
+.main_left {
+    width: 280px;
+    height:454px;
+    border: 1px solid #666;
+    float: left;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.main_right {
+    width: 1025px;
+    height:454px;
+    border: 1px solid #666;
+    float: left;
+    margin-top: 15px;
+    margin-left: 15px;
+    position:relative;
+}
+.butt {
+    width: 100%;
+    height:25px;
+    background-color: #91DCFF;
+}
+#yonghu {
+    margin-left:15px;
+}
+#gong {
+    margin-left:176px;
+}
+#lian{
+    margin-left:700px;
+}
+#lian2{
+    margin-left:10px;
+}
+.title {
+    height:50px;
+    background-color: white;
+    line-height:50px;
+
+
+}
+.tex {
+    text-align: center;
+    font-size:22px;
+    border-top: 1px solid #999;
+}
+.tex2 {
+    text-align: center;
+    font-size:12px;
+    border-top: 1px solid #999;
+}
+.title td {
+    border-right:1px solid #999;
+}
+.zi {
+    margin-left:5px;
+    color: #004362;
+    font-size:24px;
+}
+.anniu {
+    width: 100%;
+    height:60px;
+    background-color: #5CBEFF;
+    color:white;
+    border-style: none;
+    font-size: 20px;
+    margin-bottom: 2px;
+
+}
+.right_nei{
+    height:50px;
+    line-height: 50px;
+}
+.right_nei select {
+    width: 100px;
+    height:34px;
+}
+.fir_inpu {
+    width: 500px;
+    height:30px;
+}
+.fir_inpu2 {
+    width: 100px;
+    height:32px;
+}
+.one {
+    margin-left:100px;
+}
+
+.id {
+    width: 180px;
+}
+.nam {
+    width: 180px;
+}
+.sex {
+    width: 180px;
+}
+.year {
+    width: 60px;
+}
+.clas {
+    width: 60px;
+}
+.qian {
+    width: 200px;
+}
+.phone {
+    width: 170px;
+}
+.iid {
+    width: 50px;
+}
+.images {
+    width: 140px;
+}
+.zhu {
+    width: 180px;
+}
+.city {
+	width: 100px;
+}
+.cao {
+    width: 224px;
+}
+.neirong {
+    text-align:center;
+}
+.neirong td {
+    border-right: 1px solid #999;
+    height: 23px;
+}
+.xiayi {
+    position:absolute;
+    bottom: 10px;
+    width: 100%;
+    height:50px;
+    font-size:20px;
+    line-height:50px;
+
+}
+.weizhi {
+    margin-left:900px;
+}
+.fir {
+    padding-top: 5px;
+    padding-left: 30px;
+}
+.three {
+    margin-left:520px;
+}
+.inpu {
+    width: 30px;
+    height:20px;
+}
+.nex {
+    margin-left:20px;
+}
+.redd {
+    color:red;
+}
+#banquan {
+    margin-left:900px;
+}
+#tim {
+    color:red;
+}
+
+
+//增加学生信息css

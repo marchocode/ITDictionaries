@@ -1,0 +1,724 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+.all
+{
+    width: 1920px;
+    margin: auto;
+}
+.btn{
+    padding: 0;
+}
+
+.back-image
+{
+    width: 1920px;
+    height: 620px;
+    margin: auto;
+    background-image: url(../images/ban2.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.content
+{
+    width: 1920px;
+    height: 620px;
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+.title
+{
+    width: 1920px;
+    height: 76px;
+    font-size: 56px;
+    color: rgb(244, 245, 246);
+    margin-top: 200px;
+}
+
+.small-title
+{
+    width: 1920px;
+    height: 56px;
+    font-size: 36px;
+    color: rgb(229, 227, 225);
+    margin-top: 70px;
+}
+
+.put-btn-back
+{
+    width: 1920px;
+    height: 66px;
+    margin-top: 30px;
+}
+
+.put-btn
+{
+    width: 960px;
+    height: 66px;
+    margin: auto;
+ }
+
+.put input
+{
+    width: 740px;
+    height: 66px;
+    border-radius: 5px;
+    font-size: 24px;
+    margin-left: 0px;
+    float: left;
+}
+
+.btn input
+{
+    width: 200px;
+    height: 66px;
+    border-style: none;
+    border-radius: 5px;
+    font-size: 20px;
+    color: rgb(244, 245, 246);
+    text-align: center;
+    margin-left: 12px;
+    float: left;
+    cursor: pointer;
+    background-color: rgb(247, 220, 4);
+}
+
+.module
+{
+    width: 1920px;
+    height: 384px;
+    background-color: rgb(241, 240, 248);
+
+}
+
+.module-son
+{
+    width: 1160px;
+    height: 384px;
+    margin: auto;
+}
+
+.module-son li
+{
+    list-style: none;
+    width: 225px;
+    height: 80px;
+    margin-top: 70px;
+    margin-left: 50px;
+    font-size: 24px;
+    color: rgb(244, 245, 246);
+    text-align: center;
+    line-height: 3;
+    float: left;
+    cursor: pointer;
+    background-color: #49afcd;
+}
+
+@media screen and (min-width:1360px) and (max-width:1800px)
+{
+    .all
+    {
+        width: 1366px;
+        margin: auto;
+    }
+
+    .back-image
+    {
+        width: 1366px;
+        height: 460px;
+
+    }
+
+    .content
+    {
+        width: 1366px;
+        height: 460px;
+    }
+
+    .title
+    {
+        width: 1366px;
+        height: 56px;
+        font-size: 40px;
+        color: rgb(244, 245, 246);
+        margin-top: 130px;
+    }
+
+    .small-title
+    {
+        width: 1366px;
+        height: 44px;
+        font-size: 28px;
+        color: rgb(229, 227, 225);
+        margin-top: 50px;
+    }
+
+    .put-btn-back
+    {
+        width: 1366px;
+        height: 44px;
+        margin-top: 0px;
+    }
+
+    .put-btn
+    {
+        width: 720px;
+        height: 44px;
+        margin: auto;
+    }
+
+    .put input
+    {
+        width: 520px;
+        height: 44px;
+        border-style: none;
+        border-radius: 5px;
+        font-size: 18px;
+        margin-left: 0px;
+        float: left;
+        background-color: rgb(229, 227, 225);
+    }
+
+    .btn input
+    {
+        width: 160px;
+        height: 44px;
+        border-style: none;
+        border-radius: 5px;
+        font-size: 16px;
+        color: rgb(244, 245, 246);
+        text-align: center;
+        margin-left: 12px;
+        float: left;
+        background-color: rgb(247, 220, 4);
+    }
+
+    .module
+    {
+        width: 1366px;
+        height: 300px;
+        margin: auto;
+        background-color: rgb(241, 240, 248);
+
+    }
+
+    .module-son
+    {
+        width: 960px;
+        height: 300px;
+        margin: auto;
+    }
+
+    .module-son li
+    {
+        width: 190px;
+        height: 70px;
+        margin-top: 50px;
+        margin-left: 30px;
+        font-size: 20px;
+        line-height: 3;
+    }
+}
+
+@media screen and (min-width:1020px) and (max-width:1360px)
+{
+    .all
+    {
+        width: 1024px;
+        margin: auto;
+    }
+
+    .back-image
+    {
+        width: 1024px;
+        height: 458px;
+
+    }
+
+    .content
+    {
+        width: 1024px;
+        height: 458px;
+    }
+
+    .title
+    {
+        width: 1024px;
+        height: 44px;
+        font-size: 30px;
+        color: rgb(244, 245, 246);
+        margin-top: 120px;
+    }
+
+    .small-title
+    {
+        width: 1024px;
+        height: 30px;
+        font-size: 20px;
+        color: rgb(229, 227, 225);
+        margin-top: 50px;
+    }
+
+    .put-btn-back
+    {
+        width: 1024px;
+        height: 36px;
+        margin-top: 0px;
+    }
+
+    .put-btn
+    {
+        width: 540px;
+        height: 36px;
+        margin: auto;
+    }
+
+    .put input
+    {
+        width: 400px;
+        height: 36px;
+        border-style: none;
+        border-radius: 5px;
+        font-size: 16px;
+        margin-left: 0px;
+        float: left;
+        background-color: rgb(229, 227, 225);
+    }
+
+    .btn input
+    {
+        width: 120px;
+        height: 36px;
+        border-style: none;
+        border-radius: 5px;
+        font-size: 14px;
+        color: rgb(244, 245, 246);
+        text-align: center;
+        margin-left: 8px;
+        float: left;
+        background-color: rgb(247, 220, 4);
+    }
+
+    .module
+    {
+        width: 1024px;
+        height: 250px;
+        margin: auto;
+        background-color: rgb(241, 240, 248);
+
+    }
+
+    .module-son
+    {
+        width: 760px;
+        height: 250px;
+        margin: auto;
+    }
+
+    .module-son li
+    {
+        width: 150px;
+        height: 60px;
+        margin-top: 40px;
+        margin-left: 30px;
+        font-size: 16px;
+        line-height: 4;
+    }
+}
+
+@media screen and (max-width:1020px)
+{
+    .all
+    {
+        width: 768px;
+        margin: auto;
+    }
+
+    .back-image
+    {
+        width: 768px;
+        height: 458px;
+
+    }
+
+    .content
+    {
+        width: 768px;
+        height: 458px;
+    }
+
+    .title
+    {
+        width: 768px;
+        height: 44px;
+        font-size: 30px;
+        color: rgb(244, 245, 246);
+        margin-top: 120px;
+    }
+
+    .small-title
+    {
+        width: 768px;
+        height: 30px;
+        font-size: 20px;
+        color: rgb(229, 227, 225);
+        margin-top: 50px;
+    }
+
+    .put-btn-back
+    {
+        width: 768px;
+        height: 36px;
+        margin-top: 0px;
+    }
+
+    .put-btn
+    {
+        width: 540px;
+        height: 36px;
+        margin: auto;
+    }
+
+    .put input
+    {
+        width: 400px;
+        height: 36px;
+        border-style: none;
+        border-radius: 5px;
+        font-size: 16px;
+        margin-left: 0px;
+        float: left;
+        background-color: rgb(229, 227, 225);
+    }
+
+    .btn input
+    {
+        width: 120px;
+        height: 36px;
+        border-style: none;
+        border-radius: 5px;
+        font-size: 14px;
+        color: rgb(244, 245, 246);
+        text-align: center;
+        margin-left: 8px;
+        float: left;
+        background-color: rgb(247, 220, 4);
+    }
+
+    .module
+    {
+        width: 768px;
+        height: 250px;
+        margin: auto;
+        background-color: rgb(241, 240, 248);
+
+    }
+
+    .module-son
+    {
+        width: 728px;
+        height: 250px;
+        margin: auto;
+    }
+
+    .module-son li
+    {
+        width: 150px;
+        height: 60px;
+        margin-top: 40px;
+        margin-left: 25px;
+        font-size: 16px;
+        line-height: 4;
+    }
+}
+
+@media screen and (max-width:760px)
+{
+    .all
+    {
+        width: 414px;
+        margin: auto;
+    }
+
+    .back-image
+    {
+        width: 414px;
+        height: 358px;
+
+    }
+
+    .content
+    {
+        width: 414px;
+        height: 358px;
+    }
+
+    .title
+    {
+        width: 414px;
+        height: 44px;
+        font-size: 30px;
+        margin-top: 120px;
+    }
+
+    .small-title
+    {
+        width: 414px;
+        height: 30px;
+        font-size: 16px;
+        margin-top: 50px;
+    }
+
+    .put-btn-back
+    {
+        width: 414px;
+        height: 36px;
+        margin-top: 0px;
+    }
+
+    .put-btn
+    {
+        width: 290px;
+        height: 36px;
+        margin: auto;
+    }
+
+    .put input
+    {
+        width: 180px;
+        height: 30px;
+        font-size: 14px;
+        margin-left: 0px;
+    }
+
+    .btn input
+    {
+        width: 90px;
+        height: 30px;
+        font-size: 12px;
+        margin-left: 2px;
+        float: left;
+    }
+
+    .module
+    {
+        width: 414px;
+        height: 500px;
+        margin: auto;
+        background-color: rgb(241, 240, 248);
+
+    }
+
+    .module-son
+    {
+        width: 380px;
+        height: 500px;
+        margin: auto;
+    }
+
+    .module-son li
+    {
+        width: 150px;
+        height: 60px;
+        margin-top: 30px;
+        margin-left: 25px;
+        font-size: 16px;
+        line-height: 4;
+    }
+}
+
+@media screen and (max-width:400px)
+{
+    .all
+    {
+        width: 360px;
+        margin: auto;
+    }
+
+    .back-image
+    {
+        width: 360px;
+        height: 358px;
+
+    }
+
+    .content
+    {
+        width: 360px;
+        height: 358px;
+    }
+
+    .title
+    {
+        width: 360px;
+        height: 44px;
+        font-size: 30px;
+        margin-top: 120px;
+    }
+
+    .small-title
+    {
+        width: 360px;
+        height: 30px;
+        font-size: 16px;
+        margin-top: 50px;
+    }
+
+    .put-btn-back
+    {
+        width: 360px;
+        height: 30px;
+        margin-top: 0px;
+    }
+
+    .put-btn
+    {
+        width: 280px;
+        height: 30px;
+        margin: auto;
+    }
+
+    .put input
+    {
+        width: 180px;
+        height: 30px;
+        font-size: 14px;
+        margin-left: 0px;
+    }
+
+    .btn input
+    {
+        width: 90px;
+        height: 30px;
+        font-size: 12px;
+        margin-left: 2px;
+        float: left;
+    }
+
+    .module
+    {
+        width: 360px;
+        height: 800px;
+        margin: auto;
+        background-color: rgb(241, 240, 248);
+
+    }
+
+    .module-son
+    {
+        width: 350px;
+        height: 800px;
+        margin: auto;
+    }
+
+    .module-son li
+    {
+        width: 300px;
+        height: 60px;
+        margin-top: 30px;
+        font-size: 16px;
+        line-height: 4;
+    }
+}
+
+@media screen and (max-width:390px)
+{
+    .all
+    {
+        width: 320px;
+        margin: auto;
+    }
+
+    .back-image
+    {
+        width: 320px;
+        height: 358px;
+
+    }
+
+    .content
+    {
+        width: 320px;
+        height: 358px;
+    }
+
+    .title
+    {
+        width: 320px;
+        height: 44px;
+        font-size: 30px;
+        margin-top: 120px;
+    }
+
+    .small-title
+    {
+        width: 320px;
+        height: 30px;
+        font-size: 16px;
+        margin-top: 50px;
+    }
+
+    .put-btn-back
+    {
+        width: 320px;
+        height: 30px;
+        margin-top: 0px;
+    }
+
+    .put-btn
+    {
+        width: 280px;
+        height: 30px;
+        margin: auto;
+    }
+
+    .put input
+    {
+        width: 180px;
+        height: 30px;
+        font-size: 14px;
+        margin-left: 0px;
+    }
+
+    .btn input
+    {
+        width: 90px;
+        height: 30px;
+        font-size: 12px;
+        margin-left: 2px;
+        float: left;
+    }
+
+    .module
+    {
+        width: 320px;
+        height: 800px;
+        margin: auto;
+        background-color: rgb(241, 240, 248);
+
+    }
+
+    .module-son
+    {
+        width: 320px;
+        height: 800px;
+        margin: auto;
+    }
+
+    .module-son li
+    {
+        width: 280px;
+        height: 60px;
+        margin-top: 30px;
+        font-size: 16px;
+        line-height: 4;
+    }
+}

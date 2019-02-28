@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>sousuo</title>
+
+    <!-- 引入css文件 -->
+     <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" type="text/css" href="../css/search2.css">
+
+     <link rel="stylesheet" type="text/css" href="../css/login.css">
+
+      <link rel="stylesheet" type="text/css" href="../css/result.css">
+
+    <script src="../fonts/font_login/iconfont.js"></script>
+<style type="text/css">
+ .chap{
+	position:relative;
+    z-index: 999999;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+   top: 5px;
+ left: 830px; 
+   color:white;
+   
+}
+.chap:hover{
+	
+    background-color: rgba(12,12,12,0.5);
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:1020px){
+.chap{
+  left: 370px; 
+
+}
+}
+@media screen and (max-width:760px){
+.chap{
+  left: 280px; 
+
+}
+}
+@media screen and (max-width:400px){
+.chap{
+  left: 230px; 
+
+}
+
+}
+
+</style>
+</head>
+<body>
+<div class = "ll" style = "display:none;z-index: 999999999;">
+<div class="chap"><Span>&chi;</Span></div> 
+
+        <div class = "txt">
+            <h4 style = "color:rgba(238,80,37,0.8)">
+            <br/>您搜索的结果为：</h4>
+        <ul class="jgz">
+            
+            
+        </ul>
+        </div>
+
+    </div>
+<div class="beijing" id="bbb" style="width: 100%;height: 100%;position: fixed;background-color: rgba(196,196,196,0.5);z-index: 9999; display: none;"></div>
+<div class = "all">
+
+<nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+        <span class="sr-only"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <a href="#" class="navbar-brand nav-title">IT开心辞典</a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-menu">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="cative login" id="login-dh"><a href="#">登录</a></li>
+        <li class="cative"><a href="zixun-1.jsp">IT资讯</a></li>
+        <li class="cative"><a href="mingren.jsp">IT名人馆</a></li>
+        <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    知识竞赛
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="zhishi.jsp">知识答辩</a></li>
+                    <li><a href="zhishi1.jsp">知识升级</a></li>
+                    <li><a href="zhishi2.html">知识积分</a></li>
+                    <li><a href="zhishi4.html">知识排行</a></li>
+                </ul>
+          </li>
+
+
+
+        <li class="active"><a href="search2.html">名词查找</a></li>
+        <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    消息圈
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="xiaoxi.html">发表</a></li>
+                 
+                    <li><a href="xiaoxi-2.html">我的消息圈</a></li>
+<!--                     <li><a href="xiaoxi-3.html">IT表白墙</a></li> -->
+                </ul>
+          </li>
+        <li class="cative"><a href="liuyan.html">留言</a></li>
+        <li class="cative"><a href="geren.html">个人中心</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="nei">
+        <div class="top_nei">
+            <img src="../images/logo.png" alt="">
+            <div class="cha"><Span>&chi;</Span></div>
+        </div>
+        <div class="bottom_nei">
+            <!--表单区域-->
+            <div class="log">
+
+            </div>
+            <div class="log2">
+                <span>Login  </span>
+                <a href="">IT辞典</a>
+            </div>
+
+            <!--登录输入框-->
+            <div class="inpu">
+                <input id="user" type="text" name="" placeholder="UserName">
+
+
+                <svg class="icon input_ico" aria-hidden="true">
+                  <use xlink:href="#icon-account"></use>
+                </svg>
+
+
+            </div>
+
+             <div class="inpu inpu2">
+                <input id="pw" type="password" name="" placeholder="Password">
+                 <svg class="icon input_ico" aria-hidden="true">
+                  <use xlink:href="#icon-password"></use>
+                </svg>
+
+            </div>
+
+             <div class="inpu inpu2 butto">
+                <input id="dlx" type="button" name="" value="登  录">
+
+            </div>
+
+
+            <!--登录注册小字部分-->
+
+             <div class="log bom">
+                <span id="zhuce"><a href="register.html" target="blank">注册</a></span>
+                <span class="right"><a href="">忘记密码</a></span>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class = "back-image">
+        <div class = "content">
+
+            <div class = "title">
+                <span style = "color: rgb(247, 204, 4)";>
+                   Legend!&nbsp;&nbsp;
+                </span>
+                <span>You  want  IT  knowledge  in  here.</span>
+            </div>
+
+            <div class = "small-title">
+                <span>Please   input   what  wan  IT  knowledge</span>
+            </div>
+
+            <div class = "put-btn-back">
+                <div class = "put-btn">
+                    <div class = "put">
+                        <input style="padding-left: 10px;" id="ut" type="text" name="shuru"/>
+                    </div>
+
+                    <div class = "btn">
+                        <input id="tn" type="button" value="Click&nbsp;&nbsp;Search">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class = "module">
+
+        <div class = "module-son">
+            <ul id ="lis">
+                <li class="tuij">区块链</li>
+                <li class="tuij">python</li>
+                <li class="tuij">html5</li>
+                <li class="tuij">深度学习</li>
+                <li class="tuij">linux</li>
+                <li class="tuij">VR</li>
+                <li class="tuij">大数据</li>
+                <li class="tuij">云计算</li>
+            </ul>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+    <!-- 引入javaScript -->
+   <script src="../js/jquery-3.3.1.js"></script>
+   <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/search2.js"></script>
+    <script>
+    $.ajax({
+        type : "GET",
+        url : "../../MAINpages/sion.jsp",
+        dataType : "text",
+        success : function (data) {
+        	var zhi = $.trim(data);
+        	
+        if(zhi != "null")	
+          
+        	$("#login-dh").css({
+        		
+        		"display":"none"
+        	})
+        }
+    });
+
+        $(".login").click(function(){
+
+            $("#bbb").css({"display":"block"});
+        $(document.body).css({"overflow-y":"hidden"});
+
+            $(".nei").show(1100);
+
+        })
+
+        $(".cha").click(function(){
+
+            $("#bbb").css({"display":"none"});
+        $(document.body).css({"overflow-y":"auto"});
+
+            $(".nei").hide(1000);
+        })
+
+        $("#zhuce").click(function(){
+
+            $("#bbb").css({"display":"none"});
+        $(document.body).css({"overflow-y":"auto"});
+        $(".nei").hide(1000);
+        })
+        
+        
+        
+        
+   $("#tn").click(function(){
+	
+	var zhi =  $("#ut").val();
+		
+	$.ajax({
+  	   	
+				cache: false,
+				 
+				type: "POST",
+				 
+				url:"../../MAINpages/SouSuo/Sou.jsp",
+				
+			 	data: {zhi:zhi},
+			 	
+			 	dataType : "json", 
+       	
+			 	async: false,  
+				 
+				error: function(request) {
+				 
+				alert("发送请求失败！");
+				 
+				},
+			success : function (data) {
+				
+			for(var i = 0; i< data.length;i++){	
+				var html = "<li class='k'><a href='zhishi1sh.jsp?knowledgeDataID="+data[i].kid+"'><span>"+data[i].kt+""+
+               "</span></a><p>"+data[i].kj+"</p></li>";
+               var html1 = "<li class='m'><a href='mingrenxinxi/information-1.jsp?id="+data[i].mrid+"'><span>"+data[i].mrn+""+
+               "</span></a><p>"+data[i].mrj+"</p></li>";
+               var html2 = "<li class='z'><a href='zixun/zixun.jsp?id="+data[i].zid+"'><span>"+data[i].zt+""+
+               "</span></a><p>"+data[i].zj+"</p></li>";
+				$(".jgz").append(html);
+				$(".jgz").append(html1);
+				$(".jgz").append(html2);
+// 				alert($(".k").text())
+// 				alert($(".m").text())
+// 				alert($(".z").text())
+				
+
+
+				
+				
+// 				alert(data[i].kid);
+// 				alert(data[i].kt);
+// 				alert(data[i].kj);
+// 				alert(data[i].mrid);
+// 				alert(data[i].mrn);
+// 				alert(data[i].mrj);
+// 				alert(data[i].zid);
+// 				alert(data[i].zt);
+// 				alert(data[i].zj);
+			}
+			
+			$(".k").each(function(){
+			if($(this).text() == 'undefinedundefined'){
+				$(this).css({"display":"none"})
+			}
+			});
+			$(".m").each(function(){
+				if($(this).text() == 'undefinedundefined'){
+					$(this).css({"display":"none"})
+				}
+				});
+			$(".z").each(function(){
+				if($(this).text() == 'undefinedundefined'){
+					$(this).css({"display":"none"})
+				}
+				});
+			
+			  $("#bbb").css({"display":"block"});
+			   $(document.body).css({"overflow-y":"hidden"});
+			  $(".ll").fadeIn(500);
+			  $(".chap").fadeIn(200);
+			
+	  
+			}
+		
+})
+	   
+	   
+
+
+});
+
+$(".chap").click(function(){
+	  $("#bbb").css({"display":"none"});
+		$(document.body).css({"overflow-y":"auto"});
+		 $(".ll").fadeOut(500);
+			$(".chap").hide(1000);
+			$(".jgz").empty();
+			$("#ut").val("");
+})     
+  
+
+$(".tuij").click(function(){
+var zhi = $(this).text();
+$("#ut").val(zhi);
+$("#tn").click();
+$("#ut").val("");
+})
+
+$("#dlx").click(function(){
+	
+	var username = $("#user").val();
+	
+	var password = $("#pw").val();
+	
+	if(username.length == 0 || password.length == 0){
+		
+		alert("请输入完整的信息");
+	
+	}else{
+		
+$.ajax({
+			 
+				
+				cache: false,
+				 
+				type: "POST",
+				 
+				url:"../../MAINpages/Login.jsp",
+				
+				datatype:"text",
+				 
+				data:{name:username,password:password},
+				 
+				async: false,
+				 
+				error: function(request) {
+				 
+				alert("发送请求失败！");
+				 
+				},
+				 
+				success: function(data) {
+		
+			var zhi = $.trim(data);
+					
+			if(zhi == "成功"){
+				
+				window.location.reload();
+				
+			}else{
+				
+				alert(zhi)
+			}
+					
+				
+				}
+				});
+		
+	}
+	
+		
+	
+	
+})		
+ 
+    </script>
+
+</body>
+</html>

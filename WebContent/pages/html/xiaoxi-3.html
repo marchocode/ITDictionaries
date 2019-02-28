@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Document</title>
+     <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+   <link rel="stylesheet" type="text/css" href="../css/mui.min.css">
+   <link rel="stylesheet" type="text/css" href="../css/icons-extra.css" />
+     <link rel="stylesheet" type="text/css" href="../css/login.css">
+    <script src="../fonts/font_login/iconfont.js"></script>
+    <style type="text/css">
+    #logok{
+  position:absolute;
+  position: fixed;
+  top: 5px;
+  width: 200px;
+  height: 50px;
+  z-index: 9991;
+}
+#logo1{
+  position:absolute;
+  width: 100%;
+  z-index: 9991;
+}
+
+  .all{
+
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+#biaobai{
+
+  padding:20px;
+  font-size: 20px;
+  line-height: 2;
+}
+#main-scrollbar {
+          position: fixed;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+        }
+
+.mui-card-header.mui-card-media .mui-media-body{
+
+   line-height: 28px;
+}
+@media screen and (max-width: 760px) {
+
+
+.all{
+
+    width: 414px;
+}
+
+
+}
+
+@media screen and (max-width: 400px) {
+
+.all{
+
+    width: 360px;
+}
+
+}
+
+@media screen and (max-width: 390px) {
+
+.all{
+
+    width: 320px;
+}
+}
+    </style>
+</head>
+<body>
+<div id="logok"><img id="logo1" src="../images/LOGO1.png"></div>
+<div class="beijing" id="bbb" style="width: 100%;height: 100%;position: fixed;background-color: rgba(196,196,196,0.5);z-index: 9999;display: none;"></div>
+<nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+        <span class="sr-only"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <a href="#" class="navbar-brand nav-title"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-menu">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="cative login" id="login-dh"><a href="#">登录</a></li> 
+        <li class="cative"><a href="zixun-1.html">IT资讯</a></li>
+        <li class="cative"><a href="mingren.html">IT名人馆</a></li>
+    <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    知识竞赛
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="zhishi.html">知识答辩</a></li>
+                    <li><a href="zhishi1.html">知识升级</a></li>
+                    <li><a href="zhishi2.html">知识积分</a></li>
+                    <li><a href="zhishi4.html">知识排行</a></li>
+                </ul>
+          </li>
+ 
+
+
+        <li class="cative"><a href="search2.html">名词查找</a></li>
+        <li class="dropdown active">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    消息圈
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="xiaoxi.html">发表</a></li>
+                    <li><a href="xiaoxi-1.html">视频区</a></li>
+                    <li><a href="xiaoxi-2.html">我的消息圈</a></li>
+                    <li><a href="xiaoxi-3.html">IT表白墙</a></li>
+                </ul>
+          </li>
+        <li class="cative"><a href="liuyan.html">留言</a></li>
+        <li class="cative"><a href="geren.html">个人中心</a></li> 
+      </ul>
+    </div>
+  </div>
+</nav> 
+
+
+<div class="nei">
+        <div class="top_nei">
+            <img src="../images/logo.png" alt="">
+            <div class="cha"><Span>&chi;</Span></div>
+        </div>
+        <div class="bottom_nei">
+            <!--表单区域-->
+            <div class="log">
+
+            </div>
+            <div class="log2">
+                <span>Login  </span>
+                <a href="">IT辞典</a>
+            </div>
+
+            <!--登录输入框-->
+            <div class="inpu">
+                <input type="text" name="" placeholder="UserName">
+
+
+                <svg class="icon input_ico" aria-hidden="true">
+                  <use xlink:href="#icon-account"></use>
+                </svg>
+
+
+            </div>
+
+             <div class="inpu inpu2">
+                <input type="password" name="" placeholder="Password">
+                 <svg class="icon input_ico" aria-hidden="true">
+                  <use xlink:href="#icon-password"></use>
+                </svg>
+
+            </div>
+
+             <div class="inpu inpu2 butto">
+                <input type="button" name="" value="登  录">
+
+            </div>
+
+
+            <!--登录注册小字部分-->
+
+             <div class="log bom">
+                <span id="zhuce"><a href="register.html" target="blank">注册</a></span>
+                <span class="right"><a href="">忘记密码</a></span>
+            </div>
+
+
+        </div>
+    </div>
+<main id="main-scrollbar" data-scrollbar>
+    <div class="all">
+<form action="">
+<input style="width:100%;height:60px;" type="text" name="text" placeholder="再次输入您的说说"/>
+</form>
+<button type="submit" style="width:100%;height:40px;">发送</button>
+<div class="mui-content">
+      <div class="mui-card">
+        <div class="mui-card-header mui-card-media">
+          <img src="../images/touxiang/1.jpg" />
+          <div class="mui-media-body">
+            小M
+            <p>发表于 2016-06-30 15:30</p>
+          </div>
+          <!--<img class="mui-pull-left" src="../images/logo.png" width="34px" height="34px" />
+          <h2>小M</h2>
+          <p>发表于 2016-06-30 15:30</p>-->
+        </div>
+        <div class="mui-card-content" >
+          <p id="biaobai">霍金为你写出时间简史，而我为你写出一首小诗，十年前你说生如夏花般绚烂，十年后你说平凡才是唯一的答案。</p>
+        </div>
+        <div class="mui-card-footer">
+         <a class="mui-card-link"><span class="mui-icon-extra mui-icon-extra-like"></span>&nbsp;&nbsp;点赞(<span>199</span>)</a>
+          <a class="mui-card-link"><span class="mui-icon-extra mui-icon-extra-comment"></span>&nbsp;&nbsp;评论(<span>30</span>)</a>
+          <a class="mui-card-link"><span class="mui-icon-extra mui-icon-extra-share"></span>&nbsp;&nbsp;分享</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="mui-content">
+      <div class="mui-card">
+        <div class="mui-card-header mui-card-media">
+          <img src="../images/touxiang/1.jpg" />
+          <div class="mui-media-body">
+            小M
+            <p>发表于 2016-06-30 15:30</p>
+          </div>
+          <!--<img class="mui-pull-left" src="../images/logo.png" width="34px" height="34px" />
+          <h2>小M</h2>
+          <p>发表于 2016-06-30 15:30</p>-->
+        </div>
+        <div class="mui-card-content" >
+          <p id="biaobai">我能抽象出整个世界．．．    
+但是我不能抽象出你．．．    
+因为你在我心中是那么的具体．．．    
+所以我的世界并不完整．．．    
+我可以重载甚至覆盖这个世界里的任何一种方法．．．    
+但是我却不能重载对你的思念．．．    
+也许命中注定了 你在我的世界里永远的烙上了静态的属性．．．    
+而我不慎调用了爱你这个方法．．．    
+当我义无返顾的把自己作为参数传进这个方法时．．．    
+我才发现爱上你是一个死循环．．．    
+它不停的返回对你的思念压入我心里的堆栈．．．    
+在这无尽的黑夜中．．．    
+我的内存里已经再也装不下别人．．．    
+我不停的向系统申请空间．．．    
+但却捕获一个异常－－－我爱的人不爱我．．．    
+为了解决这个异常．．．    
+我愿意虚拟出最后一点内存．．．    
+把所有我能实现的方法地址压入堆栈．．．    
+并且在栈尾压入最后一个方法－－－
+将字符串”我爱你，你爱我吗？”传递给你．．．    
+如果返回值为真－－我将用尽一生去爱你．．．    
+否则－－我将释放掉所有系统资源．．．    
+给你更多的空间去追求幸福．．．．．．．</p>
+        </div>
+        <div class="mui-card-footer">
+          <a class="mui-card-link"><span class="mui-icon-extra mui-icon-extra-like"></span>&nbsp;&nbsp;点赞(<span>199</span>)</a>
+          <a class="mui-card-link"><span class="mui-icon-extra mui-icon-extra-comment"></span>&nbsp;&nbsp;评论(<span>30</span>)</a>
+          <a class="mui-card-link"><span class="mui-icon-extra mui-icon-extra-share"></span>&nbsp;&nbsp;分享</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="mui-content">
+      <div class="mui-card">
+        <div class="mui-card-header mui-card-media">
+          <img src="../images/touxiang/2.jpg" />
+          <div class="mui-media-body">
+            小M
+            <p>发表于 2016-06-30 15:30</p>
+          </div>
+          <!--<img class="mui-pull-left" src="../images/logo.png" width="34px" height="34px" />
+          <h2>小M</h2>
+          <p>发表于 2016-06-30 15:30</p>-->
+        </div>
+        <div class="mui-card-content" >
+          <p id="biaobai">想重载爱的定义，和你封装在一起，
+
+希望构造一个函数，拷贝眼前的你，
+
+我不是诗人，所以把爱写进程序里。</p>
+        </div>
+        <div class="mui-card-footer">
+          <a class="mui-card-link"><span class="mui-icon-extra mui-icon-extra-like"></span>&nbsp;&nbsp;点赞(<span>199</span>)</a>
+          <a class="mui-card-link"><span class="mui-icon-extra mui-icon-extra-comment"></span>&nbsp;&nbsp;评论(<span>30</span>)</a>
+          <a class="mui-card-link"><span class="mui-icon-extra mui-icon-extra-share"></span>&nbsp;&nbsp;分享</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="mui-content">
+      <div class="mui-card">
+        <div class="mui-card-header mui-card-media">
+          <img src="../images/touxiang/3.jpg" />
+          <div class="mui-media-body">
+            小M
+            <p>发表于 2016-06-30 15:30</p>
+          </div>
+          <!--<img class="mui-pull-left" src="../images/logo.png" width="34px" height="34px" />
+          <h2>小M</h2>
+          <p>发表于 2016-06-30 15:30</p>-->
+        </div>
+        <div class="mui-card-content" >
+          <p id="biaobai">春风十里不如你
+
+var you = function from_future_import(){};
+var spring = {
+'breezing':true,
+'length':10
+};
+var  i = [];
+i.sort([spring,you]);
+result：[you,spring]</p>
+        </div>
+        <div class="mui-card-footer">
+           <a class="mui-card-link"><span class="mui-icon-extra mui-icon-extra-like"></span>&nbsp;&nbsp;点赞(<span>199</span>)</a>
+          <a class="mui-card-link"><span class="mui-icon-extra mui-icon-extra-comment"></span>&nbsp;&nbsp;评论(<span>30</span>)</a>
+          <a class="mui-card-link"><span class="mui-icon-extra mui-icon-extra-share"></span>&nbsp;&nbsp;分享</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="mui-content">
+      <div class="mui-card">
+        <div class="mui-card-header mui-card-media">
+          <img src="../images/touxiang/4.jpg" />
+          <div class="mui-media-body">
+            小M
+            <p>发表于 2016-06-30 15:30</p>
+          </div>
+          <!--<img class="mui-pull-left" src="../images/logo.png" width="34px" height="34px" />
+          <h2>小M</h2>
+          <p>发表于 2016-06-30 15:30</p>-->
+        </div>
+        <div class="mui-card-content" >
+          <p id="biaobai">茫茫内存里，你我不曾相见；
+
+寥寥代码中，命运注定良缘。</p>
+        </div>
+        <div class="mui-card-footer">
+          <a class="mui-card-link"><span class="mui-icon-extra mui-icon-extra-like"></span>&nbsp;&nbsp;点赞(<span>199</span>)</a>
+          <a class="mui-card-link"><span class="mui-icon-extra mui-icon-extra-comment"></span>&nbsp;&nbsp;评论(<span>30</span>)</a>
+          <a class="mui-card-link"><span class="mui-icon-extra mui-icon-extra-share"></span>&nbsp;&nbsp;分享</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="mui-content">
+      <div class="mui-card">
+        <div class="mui-card-header mui-card-media">
+          <img src="../images/touxiang/5.jpg" />
+          <div class="mui-media-body">
+            小M
+            <p>发表于 2016-06-30 15:30</p>
+          </div>
+          <!--<img class="mui-pull-left" src="../images/logo.png" width="34px" height="34px" />
+          <h2>小M</h2>
+          <p>发表于 2016-06-30 15:30</p>-->
+        </div>
+        <div class="mui-card-content" >
+          <p id="biaobai">当编译开始，我们齐手共建--
+
+中国软件的春天！</p>
+        </div>
+        <div class="mui-card-footer">
+          <a class="mui-card-link"><span class="mui-icon-extra mui-icon-extra-like"></span>&nbsp;&nbsp;点赞(<span>199</span>)</a>
+          <a class="mui-card-link"><span class="mui-icon-extra mui-icon-extra-comment"></span>&nbsp;&nbsp;评论(<span>30</span>)</a>
+          <a class="mui-card-link"><span class="mui-icon-extra mui-icon-extra-share"></span>&nbsp;&nbsp;分享</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="mui-content">
+      <div class="mui-card">
+        <div class="mui-card-header mui-card-media">
+          <img src="../images/touxiang/6.jpg" />
+          <div class="mui-media-body">
+            小M
+            <p>发表于 2016-06-30 15:30</p>
+          </div>
+          <!--<img class="mui-pull-left" src="../images/logo.png" width="34px" height="34px" />
+          <h2>小M</h2>
+          <p>发表于 2016-06-30 15:30</p>-->
+        </div>
+        <div class="mui-card-content" >
+          <p id="biaobai">虽然我们是不同的对象，都有隐私的一面，
+
+但我相信你会找到我的接口，
+
+把我的最真给你看！</p>
+        </div>
+        <div class="mui-card-footer">
+          <a class="mui-card-link"><span class="mui-icon-extra mui-icon-extra-like"></span>&nbsp;&nbsp;点赞(<span>199</span>)</a>
+          <a class="mui-card-link"><span class="mui-icon-extra mui-icon-extra-comment"></span>&nbsp;&nbsp;评论(<span>30</span>)</a>
+          <a class="mui-card-link"><span class="mui-icon-extra mui-icon-extra-share"></span>&nbsp;&nbsp;分享</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="mui-content">
+      <div class="mui-card">
+        <div class="mui-card-header mui-card-media">
+          <img src="../images/touxiang/7.jpg" />
+          <div class="mui-media-body">
+            小M
+            <p>发表于 2016-06-30 15:30</p>
+          </div>
+          <!--<img class="mui-pull-left" src="../images/logo.png" width="34px" height="34px" />
+          <h2>小M</h2>
+          <p>发表于 2016-06-30 15:30</p>-->
+        </div>
+        <div class="mui-card-content" >
+          <p id="biaobai">因为我是你的指针，在茫茫内存的堆栈中，
+
+永远指向你那片天空，不孜不倦！</p>
+        </div>
+        <div class="mui-card-footer">
+          <a class="mui-card-link"><span class="mui-icon-extra mui-icon-extra-like"></span>&nbsp;&nbsp;点赞(<span>199</span>)</a>
+          <a class="mui-card-link"><span class="mui-icon-extra mui-icon-extra-comment"></span>&nbsp;&nbsp;评论(<span>30</span>)</a>
+          <a class="mui-card-link"><span class="mui-icon-extra mui-icon-extra-share"></span>&nbsp;&nbsp;分享</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="mui-content">
+      <div class="mui-card">
+        <div class="mui-card-header mui-card-media">
+          <img src="../images/touxiang/7.jpg" />
+          <div class="mui-media-body">
+            小M
+            <p>发表于 2016-06-30 15:30</p>
+          </div>
+          <!--<img class="mui-pull-left" src="../images/logo.png" width="34px" height="34px" />
+          <h2>小M</h2>
+          <p>发表于 2016-06-30 15:30</p>-->
+        </div>
+        <div class="mui-card-content" >
+          <p id="biaobai">我愿做你的内联，供你无限次的调用，
+
+直到海枯石烂！
+
+我愿做你的引用，和你同进退共生死，
+
+一起经受考验！</p>
+        </div>
+        <div class="mui-card-footer">
+          <a class="mui-card-link"><span class="mui-icon-extra mui-icon-extra-like"></span>&nbsp;&nbsp;点赞(<span>199</span>)</a>
+          <a class="mui-card-link"><span class="mui-icon-extra mui-icon-extra-comment"></span>&nbsp;&nbsp;评论(<span>30</span>)</a>
+          <a class="mui-card-link"><span class="mui-icon-extra mui-icon-extra-share"></span>&nbsp;&nbsp;分享</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="mui-content">
+      <div class="mui-card">
+        <div class="mui-card-header mui-card-media">
+          <img src="../images/touxiang/7.jpg" />
+          <div class="mui-media-body">
+            小M
+            <p>发表于 2016-06-30 15:30</p>
+          </div>
+          <!--<img class="mui-pull-left" src="../images/logo.png" width="34px" height="34px" />
+          <h2>小M</h2>
+          <p>发表于 2016-06-30 15:30</p>-->
+        </div>
+        <div class="mui-card-content" >
+          <p id="biaobai">每次你微笑的看着我，都会引发使我心跳加速的触发器，我发现自己已深深地爱上了你，无法逃避，因为我们在同一个 Database 里。</p>
+        </div>
+        <div class="mui-card-footer">
+          <a class="mui-card-link"><span class="mui-icon-extra mui-icon-extra-like"></span>&nbsp;&nbsp;点赞(<span>199</span>)</a>
+          <a class="mui-card-link"><span class="mui-icon-extra mui-icon-extra-comment"></span>&nbsp;&nbsp;评论(<span>30</span>)</a>
+          <a class="mui-card-link"><span class="mui-icon-extra mui-icon-extra-share"></span>&nbsp;&nbsp;分享</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="mui-content">
+      <div class="mui-card">
+        <div class="mui-card-header mui-card-media">
+          <img src="../images/touxiang/7.jpg" />
+          <div class="mui-media-body">
+            小M
+            <p>发表于 2016-06-30 15:30</p>
+          </div>
+          <!--<img class="mui-pull-left" src="../images/logo.png" width="34px" height="34px" />
+          <h2>小M</h2>
+          <p>发表于 2016-06-30 15:30</p>-->
+        </div>
+        <div class="mui-card-content" >
+          <p id="biaobai">经过我长期的查询分析，对你表结构的了解也越来越清晰，你温柔美丽，高雅贤淑，简直就是我心目中的 BCD。</p>
+        </div>
+        <div class="mui-card-footer">
+          <a class="mui-card-link"><span class="mui-icon-extra mui-icon-extra-like"></span>&nbsp;&nbsp;点赞(<span>199</span>)</a>
+          <a class="mui-card-link"><span class="mui-icon-extra mui-icon-extra-comment"></span>&nbsp;&nbsp;评论(<span>30</span>)</a>
+          <a class="mui-card-link"><span class="mui-icon-extra mui-icon-extra-share"></span>&nbsp;&nbsp;分享</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="mui-content">
+      <div class="mui-card">
+        <div class="mui-card-header mui-card-media">
+          <img src="../images/touxiang/7.jpg" />
+          <div class="mui-media-body">
+            小M
+            <p>发表于 2016-06-30 15:30</p>
+          </div>
+          <!--<img class="mui-pull-left" src="../images/logo.png" width="34px" height="34px" />
+          <h2>小M</h2>
+          <p>发表于 2016-06-30 15:30</p>-->
+        </div>
+        <div class="mui-card-content" >
+          <p id="biaobai">为了你，我会 DELETE 自己所有的坏脾气，也会时常 UPDATE 自己。你交给我的 transaction，无论 @@error 等于几，我都会 commite，尽心尽力。我会紧紧地 FETCH，我们在一起的美好回忆，将它变成加密的存储过程，而不是转瞬即逝 tempdb。</p>
+        </div>
+        <div class="mui-card-footer">
+          <a class="mui-card-link"><span class="mui-icon-extra mui-icon-extra-like"></span>&nbsp;&nbsp;点赞(<span>199</span>)</a>
+          <a class="mui-card-link"><span class="mui-icon-extra mui-icon-extra-comment"></span>&nbsp;&nbsp;评论(<span>30</span>)</a>
+          <a class="mui-card-link"><span class="mui-icon-extra mui-icon-extra-share"></span>&nbsp;&nbsp;分享</a>
+        </div>
+      </div>
+    </div>
+
+
+
+    </div>
+    </main>
+<script src="../js/jquery-3.3.1.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/smooth-scrollbar.js"></script>
+
+
+<script>
+        
+        $(".login").click(function(){
+            
+            $("#bbb").css({"display":"block"});
+        $(document.body).css({"overflow-y":"hidden"});
+
+            $(".nei").show(1100);
+
+        })
+
+        $(".cha").click(function(){
+
+            $("#bbb").css({"display":"none"});
+        $(document.body).css({"overflow-y":"auto"});
+
+            $(".nei").hide(1000);
+        })
+
+        $("#zhuce").click(function(){
+
+            $("#bbb").css({"display":"none"});
+        $(document.body).css({"overflow-y":"auto"});
+        $(".nei").hide(1000);
+        })
+             Scrollbar.initAll({
+            speed: 3,
+            overscrollEffect: 'bounce',
+            overscrollEffectColor: '#d2527f'
+        });
+    </script>
+
+   
+</body>
+</html>

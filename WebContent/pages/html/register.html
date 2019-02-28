@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>欢迎来到IT辞典注册</title>
+     <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/reCss.css">
+</head>
+<body>
+
+
+
+
+
+
+    <!--最大的盒子居中-->
+    <div class="cent">
+
+        <div class="neiron">
+
+            <div class="left_nei">
+                <!--图片在左边-->
+            </div>
+
+            <div class="right_nei">
+                <!--右边边框所在的地方，主要表单区-->
+
+                <div class="rig_form">
+                    <span>欢  迎  注  册</span>
+				<form id="allform">
+                    <div class="rig_talble">
+                        <li class="top_li"><span>用户名:</span></li>
+                        <li><input type="text" name="user" id="user"></li>
+                    </div>
+                    <div class="rig_talble">
+                        <li class="top_li"><span>密码:</span></li>
+                        <li><input type="password" id="pw" name="pw"></li>
+                    </div>
+                    <div class="rig_talble">
+                        <li class="top_li"><span>确认密码:</span></li>
+                        <li><input type="password" id="pw1" name="pw1"></li>
+                    </div>
+                    <div class="rig_talble">
+                        <li class="top_li"><span>手机号:</span></li>
+                        <li><input type="text" id="number" name="phone"></li>
+                    </div>
+</form>
+
+                    <div class="liji">
+                    <input type="button"  name="" id="zc" value="立 即 注 册">
+                    </div>
+
+                    <div class="bottom">
+                        <li><input type="checkbox" name=""><span>我已仔细阅读并接受相关条例及其说明</span></li>
+                        <li><span>陕西 新华IT开心辞典| Copyright © 1999-2018, ITCSDN.NET, All Rights Reserved</span></li>
+                    </div>
+
+                </div>
+
+                <div class="right_lef">
+                    <!--右边区域-->
+                    <span><a href="">已有账号？</a></span>
+
+                    <!--二维码-->
+                    <div class="ma">
+                    <p><a href="">微信公众号：xinhua</a></p>
+                    <img src="../images/register-1.jpg" alt="">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+   <button class="btn btn-primary btn-lg" id="ymsure" data-toggle="modal" data-target="#myModal" style="display:none"></button>
+    <!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">模态框（Modal）标题</h4>
+            </div>
+            <div class="modal-body">
+            
+            <form id="ymform">
+            <input type="text" placeholder="请输入您的验证码" name="ym" id="ym"/>
+            </form>
+            
+            </div>
+            <div"C:/Users/Administrator/Desktop/后台管理/html/houtai.html" class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" id="subym" class="btn btn-primary">提交更改</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+        <script src="../js/jquery-3.3.1.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
+    <script>
+    
+    var num="";
+    
+    $("#zc").click(function(){
+    
+    	var user = $("#user").val();
+    	
+    	var pw = $("#pw").val();
+    	
+    	var pw1 = $("#pw1").val();
+    	
+    	var number = $("#number").val();
+    	
+    	
+    	if(user.length == 0 || pw.length == 0 || pw1.length == 0 || number.length == 0){
+    		
+    		alert("您没有输入完整的信息");
+    	}else{
+    		
+    		if(user.length >=4 ){
+    			
+    			if(pw.length >= 7){
+    				
+    				if(pw1 == pw){
+    					   
+    			  		var regExp = /^(86)?((13\d{9})|(15[0,1,2,3,5,6,7,8,9]\d{8})|(18[0,5,6,7,8,9]\d{8}))$/;  	
+    					
+    		if (!regExp.test(number)){
+    			
+    			alert("我最亲爱的用户！ 您的手机号格式有误")
+    			
+    			
+    		}else{
+    			
+   		
+    			
+     			$.ajax({      //最外层ajax
+    	   			 
+       				
+       				cache: false,
+       				 
+       				type: "POST",
+       				 
+       				url:"../../MAINpages/UserTrue.jsp",
+       				
+       				datatype:"text",
+       				 
+       				data:{user:user},
+       				 
+       				async: false,
+       				 
+       				success: function(data) { //最外层ajax返回值
+       		
+    				var zhi = $.trim(data);
+       					
+    				if(zhi == "成功"){
+    		
+    					alert("你的用户名已经被注册");
+    				
+    				}else{   //else ajax返回
+    					
+    					for(var i=0;i<4;i++){  
+    		    			  
+    	    				num+=Math.floor(Math.random()*10)  
+    	    			
+    	    			} 
+    					
+    					$.ajax({
+    	    	   			 
+    	       				
+    	       				cache: false,
+    	       				 
+    	       				type: "POST",
+    	       				 
+    	       				url:"../../MAINpages/Regym.jsp",
+    	       				
+    	       				datatype:"text",
+    	       				 
+    	       				data:{num:num,number:number},
+    	       				 
+    	       				async: false,
+    	       				 
+    	       				});
+    		
+    	    			
+    	    			$("#ymsure").click();
+    	    			
+    	    		$("#subym").click(function(){   //function 点击验证
+    	    		
+    	    		var ym = $("#ym").val();
+    	    		
+    	    		if(ym.length == 0){
+    	    			
+    	    			alert("我最亲爱的用户！ 您的验证码没有输入")
+    	    			
+    	    		}else{   //else 验证码不等于0的情况下
+    	    			
+    	    			if(ym == num){
+    	    				
+    	    				
+    	    				$.ajax({
+    	    		    	   	
+    	           				cache: false,
+    	           				 
+    	           				type: "POST",
+    	           				 
+    	           				url:"../../MAINpages/Re.jsp",
+    	           				
+    	           				datatype:"text",
+    	           				 
+    	           				data:$("#allform").serialize(),
+    	           				 
+    	           				async: false,
+    	     		 
+    	           				success: function(data) {
+    	           		
+    	        				var zhi = $.trim(data);
+    	           					
+    	        				if(zhi == "注册成功"){
+    	        					
+    	        					
+    	        					window.open("zixun-1.jsp");
+    	        					
+    	        				}else{
+    	        					
+    	        					alert(zhi);
+    	        				}
+    	           					
+    	           				
+    	           				}
+    	           				});
+    	    				
+    	    				
+    	    			}else{
+    	    				
+    	    				alert("我最亲爱的用户！ 您的验证码输入错误")
+    	    			}
+    		
+       				
+       				}    //else 验证码不等于0的情况下
+       				});   //function 点击验证
+       				
+       				}  //else ajax返回		
+       				
+     }  //最外层ajax返回值
+	
+    			
+     			})    //最外层ajax
+    		
+ 					
+      
+    		}
+    					
+    				}else{
+    					
+    					alert("我最亲爱的用户！ 您两次输入的密码不一致")
+    				}
+    				
+    				
+    			}else{
+    				
+    				alert("我最亲爱的用户！ 您的密码必须最少为7个字符")
+    			}
+    			
+    			
+    		}else{
+    			
+    			alert("我最亲爱的用户！ 您的账号必须最少为四个字符")
+    			
+    		}
+    		
+    	}
+    	
+    })
+    
+    
+    
+    </script>
+</body>
+</html>

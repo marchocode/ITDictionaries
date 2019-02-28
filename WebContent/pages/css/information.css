@@ -1,0 +1,1124 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.all
+{
+    width: 1920px;
+    margin:
+    auto;
+}
+
+
+
+.icon {
+   width: 0.5em; height: 0.5em;
+   vertical-align: -0.15em;
+   fill: currentColor;
+   overflow: hidden;
+}
+.big-back
+{
+    width: 1920px;
+    height: 1380px;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-color: rgb(238, 237, 235);
+}
+#xin{
+    width:35px;
+    height:35px;
+    margin-left:35px;
+    margin-top:5px;
+}
+
+
+.medium-back
+{
+    width: 1920px;
+    margin-top: 100px;
+}
+
+.medium-back-son
+{
+    width: 1510px;
+}
+
+.person-back
+{
+    width: 300px;
+    box-shadow: 2px 8px 5px rgb(198, 197, 196);
+    float: left;
+}
+
+.head-back
+{
+    width: 300px;
+    height: 368px;
+    overflow: hidden;
+    background-color: rgb(196, 225, 232);
+}
+
+.yuan
+{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    margin-top: 35px;
+    border-radius: 100px;
+    overflow: hidden;
+    background-color: rgb(106, 201, 131);
+}
+
+.yuan img
+{
+    width: 200px;
+    height: 200px;
+}
+
+.name
+{
+    width: 300px;
+    height: 135px;
+    text-align: center;
+    color: rgb(53, 53, 52);
+    line-height: 3;
+}
+
+.name p
+{
+    line-height: 1;
+    color: rgb(134, 133, 132);
+}
+
+.btn-back
+{
+    width: 300px;
+    height: 120px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.dzan{
+    width:200px;
+    height:50px;
+    margin-top:33px;
+    margin-left:65px;
+    background-color: #C4E1E8;
+    border:none;
+    width:170px;
+    height:50px;
+    border-radius:25px;
+    position: absolute;
+
+}
+.num{
+    position:relative;
+    top: -4px;
+    left:17px;
+    color:white;
+}
+
+
+
+
+
+.btn
+{
+    width: 300px;
+    height: 40px;
+    margin-top: 35px;
+}
+
+.btn input
+{
+    width: 220px;
+    height: 40px;
+    border-style: none;
+    border-radius: 25px;
+    margin-left: 38px;
+    color: white;
+    text-align: center;
+    background-color: rgba(1,1,1,0.7);
+}
+
+.for-back
+{
+    width: 930px;
+    float: right;
+}
+
+.back-cell
+{
+    width: 930px;
+    height: 368px;
+}
+.back-cell-a
+{
+    width: 930px;
+    height: 368px;
+    border: 1px solid rgb(209, 208, 206);
+    background-color: white;
+}
+
+.a-son
+{
+    width: 830px;
+    height: 298px;
+    margin: auto;
+    margin-top: 35px;
+    font-size: 12px;
+    line-height: 1.7;
+    letter-spacing: 2px;
+}
+
+.back-cell2
+{
+    width: 875px;
+    height: 850px;
+}
+.back-cell-b
+{
+    width: 875px;
+    height: 850px;
+    border: 1px solid rgb(209, 208, 206);;
+    border-top: none;
+    overflow: hidden;
+    background-color: white;
+}
+
+.b-son
+{
+    width: 775px;
+    height: 738px;
+    margin: auto;
+    margin-top: 50px;
+    letter-spacing: 2px;
+    border-top: 1px solid rgb(209, 208, 206);
+   }
+
+@media screen and (min-width:1360px) and (max-width:1800px)
+{
+
+    .all
+{
+    width: 1366px;
+    margin: auto;
+}
+
+.big-back
+{
+    width: 1366px;
+    height: 1380px;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-color: rgb(238, 237, 235);
+}
+
+.medium-back
+{
+    width: 1366px;
+    margin-top: 100px;
+}
+
+.medium-back-son
+{
+    width: 1366px;
+}
+
+.person-back
+{
+    width: 300px;
+    box-shadow: 2px 8px 5px rgb(198, 197, 196);
+    float: left;
+}
+
+.head-back
+{
+    width: 300px;
+    height: 368px;
+    overflow: hidden;
+    background-color: rgb(196, 225, 232);
+}
+
+.yuan
+{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    margin-top: 35px;
+    border-radius: 100px;
+    overflow: hidden;
+    background-color: rgb(106, 201, 131);
+}
+
+.yuan img
+{
+    width: 200px;
+    height: 200px;
+}
+
+.name
+{
+    width: 300px;
+    height: 135px;
+    text-align: center;
+    color: rgb(53, 53, 52);
+    line-height: 3;
+}
+
+.name p
+{
+    line-height: 1;
+    color: rgb(134, 133, 132);
+}
+
+.btn-back
+{
+    width: 300px;
+    height: 120px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.btn
+{
+    width: 300px;
+    height: 40px;
+    margin-top: 35px;
+}
+
+.btn input
+{
+    width: 220px;
+    height: 40px;
+    border-style: none;
+    border-radius: 25px;
+    margin-left: 38px;
+    color: white;
+    text-align: center;
+    background-color: rgba(1,1,1,0.7);
+}
+
+.for-back
+{
+    width: 930px;
+    margin-left: 65px;
+    float: left;
+}
+
+.back-cell
+{
+    width: 930px;
+    height: 368px;
+}
+.back-cell-a
+{
+    width: 930px;
+    height: 368px;
+    border: 1px solid rgb(209, 208, 206);
+    background-color: white;
+}
+
+.a-son
+{
+    width: 830px;
+    height: 298px;
+    margin: auto;
+    margin-top: 35px;
+    font-size: 12px;
+    line-height: 1.7;
+    letter-spacing: 2px;
+}
+
+.back-cell2
+{
+    width: 875px;
+    height: 850px;
+}
+.back-cell-b
+{
+    width: 875px;
+    height: 850px;
+    border: 1px solid rgb(209, 208, 206);;
+    border-top: none;
+    overflow: hidden;
+    background-color: white;
+}
+
+.b-son
+{
+    width: 775px;
+    height: 738px;
+    margin: auto;
+    margin-top: 50px;
+    letter-spacing: 2px;
+    border-top: 1px solid rgb(209, 208, 206);
+   }
+
+
+}
+
+@media screen and (min-width:1020px) and (max-width:1360px)
+{
+
+    .all
+{
+    width: 1024px;
+    margin: auto;
+}
+
+.big-back
+{
+    width: 1024px;
+    height: 1680px;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-color: rgb(238, 237, 235);
+}
+
+.medium-back
+{
+    width: 1024px;
+    margin-top: 100px;
+}
+
+.medium-back-son
+{
+    width: 1024px;
+}
+
+.person-back
+{
+    width: 300px;
+    box-shadow: 2px 8px 5px rgb(198, 197, 196);
+    float: left;
+}
+
+.head-back
+{
+    width: 300px;
+    height: 368px;
+    overflow: hidden;
+    background-color: rgb(196, 225, 232);
+}
+
+.yuan
+{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    margin-top: 35px;
+    border-radius: 100px;
+    overflow: hidden;
+    background-color: rgb(106, 201, 131);
+}
+
+.yuan img
+{
+    width: 200px;
+    height: 200px;
+}
+
+.name
+{
+    width: 300px;
+    height: 135px;
+    text-align: center;
+    color: rgb(53, 53, 52);
+    line-height: 3;
+}
+
+.name p
+{
+    line-height: 1;
+    color: rgb(134, 133, 132);
+}
+
+.btn-back
+{
+    width: 300px;
+    height: 120px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.btn
+{
+    width: 300px;
+    height: 40px;
+    margin-top: 35px;
+}
+
+.btn input
+{
+    width: 220px;
+    height: 40px;
+    border-style: none;
+    border-radius: 25px;
+    margin-left: 38px;
+    color: white;
+    text-align: center;
+    background-color: rgba(1,1,1,0.7);
+}
+
+.for-back
+{
+    width: 680px;
+    margin-left: 20px;
+    float: left;
+}
+
+.back-cell
+{
+    width: 680px;
+    height: 368px;
+}
+.back-cell-a
+{
+    width: 680px;
+    height: 368px;
+    border: 1px solid rgb(209, 208, 206);
+    background-color: white;
+}
+
+.a-son
+{
+    width: 600px;
+    height: 498px;
+    margin: auto;
+    margin-top: 35px;
+    font-size: 12px;
+    line-height: 1.7;
+    letter-spacing: 2px;
+}
+
+.back-cell2
+{
+    width: 645px;
+    height: 1380px;
+}
+.back-cell-b
+{
+    width: 645px;
+    height: 1080px;
+    border: 1px solid rgb(209, 208, 206);;
+    border-top: none;
+    overflow: hidden;
+    background-color: white;
+}
+
+.b-son
+{
+    width: 525px;
+    height: 1280px;
+    margin: auto;
+    margin-top: 50px;
+    letter-spacing: 2px;
+    border-top: 1px solid rgb(209, 208, 206);
+   }
+
+
+}
+
+@media screen and (max-width:1020px)
+{
+
+  .all
+{
+    width: 768px;
+    margin: auto;
+}
+
+.big-back
+{
+    width: 768px;
+    height: 2000px;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-color: rgb(238, 237, 235);
+}
+
+.medium-back
+{
+    width: 768px;
+    margin-top: 20px;
+}
+
+.medium-back-son
+{
+    width: 768px;
+}
+
+.person-back
+{
+    width: 768px;
+    height: 500px;
+    box-shadow: 2px 8px 5px rgb(198, 197, 196);
+}
+
+.head-back
+{
+    width: 768px;
+    height: 385px;
+    overflow: hidden;
+    background-color: rgb(196, 225, 232);
+}
+
+.yuan
+{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    margin-top: 35px;
+    border-radius: 100px;
+    overflow: hidden;
+    background-color: rgb(106, 201, 131);
+}
+
+.yuan img
+{
+    width: 200px;
+    height: 200px;
+}
+
+.name
+{
+    width: 768px;
+    height: 135px;
+    text-align: center;
+    color: rgb(53, 53, 52);
+    line-height: 3;
+}
+
+.name p
+{
+    line-height: 1;
+    color: rgb(134, 133, 132);
+}
+
+.btn-back
+{
+    width: 768px;
+    height: 120px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.btn
+{
+    width: 768px;
+    height: 40px;
+    margin-top: 35px;
+}
+
+.btn input
+{
+    width: 220px;
+    height: 40px;
+    border-style: none;
+    border-radius: 25px;
+    margin-left: 38px;
+    color: white;
+    text-align: center;
+    background-color: rgba(1,1,1,0.7);
+}
+
+.for-back
+{
+    width: 768px;
+}
+
+.back-cell
+{
+    width: 768px;
+    height: 368px;
+}
+.back-cell-a
+{
+    width: 768px;
+    height: 368px;
+    border: 1px solid rgb(209, 208, 206);
+    border: none;
+    background-color: white;
+}
+
+.a-son
+{
+    width: 698px;
+    height: 310px;
+    margin: auto;
+    margin-top: 30px;
+    font-size: 12px;
+    line-height: 1.7;
+    letter-spacing: 2px;
+    // background-color: red;
+}
+
+.back-cell2
+{
+    width: 768px;
+    height: 1380px;
+    margin-top: -20px;
+}
+.back-cell-b
+{
+    width: 768px;
+    height: 1080px;
+    border: none;
+    overflow: hidden;
+    background-color: white;
+}
+
+.b-son
+{
+    width: 698px;
+    height: 1000px;
+    margin: auto;
+    margin-top: 25px;
+    letter-spacing: 2px;
+    border-top: 1px solid rgb(209, 208, 206);
+    // background-color: red;
+   }
+
+}
+
+@media screen and (max-width: 760px)
+{
+
+  .all
+{
+    width: 414px;
+    margin: auto;
+}
+
+.big-back
+{
+    width: 414px;
+    height: 2500px;
+}
+
+.medium-back
+{
+    width: 414px;
+    margin-top: 20px;
+}
+
+.medium-back-son
+{
+    width: 414px;
+}
+
+.person-back
+{
+    width: 414px;
+    height: 500px;
+}
+
+.head-back
+{
+    width: 414px;
+    height: 385px;
+}
+
+.yuan
+{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    margin-top: 35px;
+    border-radius: 100px;
+}
+
+.yuan img
+{
+    width: 200px;
+    height: 200px;
+}
+
+.name
+{
+    width: 414px;
+    height: 135px;
+    line-height: 3;
+}
+
+.name p
+{
+    line-height: 1;
+}
+
+.btn-back
+{
+    width: 414px;
+    height: 120px;
+}
+
+.btn
+{
+    width: 414px;
+    height: 40px;
+    margin-top: 35px;
+}
+
+.btn input
+{
+    width: 220px;
+    height: 40px;
+    border-style: none;
+    border-radius: 25px;
+    margin-left: 38px;
+    color: white;
+}
+
+.for-back
+{
+    width: 414px;
+}
+
+.back-cell
+{
+    width: 414px;
+    height: 400px;
+}
+.back-cell-a
+{
+    width: 414px;
+    height: 400px;
+    border: 1px solid rgb(209, 208, 206);
+    border: none;
+    background-color: white;
+}
+
+.a-son
+{
+    width: 400px;
+    height: 370px;
+    margin: auto;
+    margin-top: 30px;
+    font-size: 12px;
+    line-height: 1.7;
+    letter-spacing: 2px;
+}
+
+.back-cell2
+{
+    width: 414px;
+    height: 2000px;
+    margin-top: 20px;
+}
+.back-cell-b
+{
+    width: 414px;
+    height: 1480px;
+    border: none;
+    overflow: hidden;
+    background-color: white;
+}
+
+.b-son
+{
+    width: 368px;
+    height: 1400px;
+    margin: auto;
+    margin-top: 25px;
+    letter-spacing: 2px;
+    border-top: 1px solid rgb(209, 208, 206);
+   }
+
+}
+
+@media screen and (max-width: 400px)
+{
+
+  .all
+{
+    width: 360px;
+    margin: auto;
+}
+
+.big-back
+{
+    width: 360px;
+    height: 2800px;
+}
+
+.medium-back
+{
+    width: 360px;
+    margin-top: 20px;
+}
+
+.medium-back-son
+{
+    width: 360px;
+}
+
+.person-back
+{
+    width: 360px;
+    height: 500px;
+}
+
+.head-back
+{
+    width: 360px;
+    height: 385px;
+}
+
+.yuan
+{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    margin-top: 35px;
+    border-radius: 100px;
+}
+
+.yuan img
+{
+    width: 200px;
+    height: 200px;
+}
+
+.name
+{
+    width: 360px;
+    height: 135px;
+    line-height: 3;
+}
+
+.name p
+{
+    line-height: 1;
+}
+
+.btn-back
+{
+    width: 360px;
+    height: 120px;
+}
+
+.btn
+{
+    width: 360px;
+    height: 40px;
+    margin-top: 35px;
+}
+
+.btn input
+{
+    width: 220px;
+    height: 40px;
+    border-style: none;
+    border-radius: 25px;
+    margin-left: 38px;
+    color: white;
+}
+
+.for-back
+{
+    width: 360px;
+}
+
+.back-cell
+{
+    width: 360px;
+    height: 450px;
+}
+.back-cell-a
+{
+    width: 360px;
+    height: 450px;
+    border: 1px solid rgb(209, 208, 206);
+    border: none;
+    background-color: white;
+}
+
+.a-son
+{
+    width: 340px;
+    height: 420px;
+    margin: auto;
+    margin-top: 5px;
+    font-size: 12px;
+    line-height: 1.7;
+    letter-spacing: 2px;
+}
+
+.back-cell2
+{
+    width: 360px;
+    height: 2400px;
+    margin-top: 0px;
+}
+.back-cell-b
+{
+    width: 360px;
+    height: 1650px;
+    border: none;
+    overflow: hidden;
+    background-color: white;
+}
+
+.b-son
+{
+    width: 328px;
+    height: 1580px;
+    margin: auto;
+    margin-top: 5px;
+    letter-spacing: 2px;
+    border-top: 1px solid rgb(209, 208, 206);
+   }
+
+}
+
+@media screen and (max-width: 390px)
+{
+
+  .all
+{
+    width: 320px;
+    margin: auto;
+}
+
+.big-back
+{
+    width: 320px;
+    height: 2900px;
+}
+
+.medium-back
+{
+    width: 320px;
+    margin-top: 20px;
+}
+
+.medium-back-son
+{
+    width: 320px;
+}
+
+.person-back
+{
+    width: 320px;
+    height: 500px;
+}
+
+.head-back
+{
+    width: 320px;
+    height: 385px;
+}
+
+.yuan
+{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    margin-top: 35px;
+    border-radius: 100px;
+}
+
+.yuan img
+{
+    width: 200px;
+    height: 200px;
+}
+
+.name
+{
+    width: 320px;
+    height: 135px;
+    line-height: 3;
+}
+
+.name p
+{
+    line-height: 1;
+}
+
+.btn-back
+{
+    width: 320px;
+    height: 120px;
+}
+
+.btn
+{
+    width: 320px;
+    height: 40px;
+    margin-top: 35px;
+}
+
+.btn input
+{
+    width: 220px;
+    height: 40px;
+    border-style: none;
+    border-radius: 25px;
+    margin-left: 38px;
+    color: white;
+}
+
+.for-back
+{
+    width: 320px;
+}
+
+.back-cell
+{
+    width: 320px;
+    height: 500px;
+}
+.back-cell-a
+{
+    width: 320px;
+    height: 500px;
+    border: 1px solid rgb(209, 208, 206);
+    border: none;
+    background-color: white;
+}
+
+.a-son
+{
+    width: 300px;
+    height: 460px;
+    margin: auto;
+    margin-top: 5px;
+    font-size: 12px;
+    line-height: 1.7;
+    letter-spacing: 2px;
+}
+
+.back-cell2
+{
+    width: 320px;
+    height: 1800px;
+    margin-top: 0px;
+}
+.back-cell-b
+{
+    width: 320px;
+    height: 1800px;
+    border: none;
+    overflow: hidden;
+    background-color: white;
+}
+
+.b-son
+{
+    width: 288px;
+    height: 1750px;
+    margin: auto;
+    margin-top: 5px;
+    letter-spacing: 2px;
+    border-top: 1px solid rgb(209, 208, 206);
+   }
+
+}
+
+
+

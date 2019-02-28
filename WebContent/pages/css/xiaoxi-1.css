@@ -1,0 +1,204 @@
+/*
+* @Author: Marte
+* @Date:   2018-05-03 09:10:54
+* @Last Modified by:   Marte
+* @Last Modified time: 2018-05-04 11:34:13
+*/
+
+
+body{
+    background-image: url("../images/xbg-1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin:0;
+    padding:0;
+}
+#logok{
+    position:absolute;
+    position: fixed;
+    top: 5px;
+    width: 200px;
+    height: 50px;
+    z-index: 9991;
+}
+#logo1{
+    position:absolute;
+    width: 100%;
+    z-index: 9991;
+}
+
+.all{
+
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+
+
+/*公用*/
+.all a{
+    font-size: 15px;
+}
+/*公用*/
+ .all li{
+   list-style:none;
+   padding-left:40px;
+   color:#333;
+   padding-top: 3px;
+   font-size:17px;
+}
+
+/*搜索框*/
+.going{
+    width:100%;
+    height:70px;
+    padding-bottom: 60px;
+    position:relative;
+}
+.going input{
+    border-radius:17px;
+    width:100%;
+    height:50px;
+    border-style: none;
+    outline-style:none ;
+    background-color: white;
+    margin-top:20px;
+    padding-left: 20px;
+
+}
+.going img{
+    width:20px;
+    height:40px;
+     position: absolute;
+    float: right;
+    top: 18px;
+    right:54px;
+    display: none;
+
+}
+/*第一个动态栏*/
+/*公用*/
+.gy{
+    border-radius:32px;
+    width:80%;
+    background-color: rgba(255,255,255,0.5);
+    margin: 0 auto;
+    overflow: hidden;
+}
+.o{
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+/*公用*/
+.one{
+    width:100%;
+    height:50px;
+    background-color: rgba(255,255,255,0.6);
+    position:relative;
+}
+/*公用*/
+.peo{
+    border-radius:22.5px;
+    width:45px;
+    height:45px;
+    overflow:hidden;
+    position:absolute;
+    top:3px;
+    left:28px;
+
+}
+/*公用*/
+
+.img_fa{
+    width: 100%;
+}
+.img_fa img{
+    width: 100%;
+}
+
+.post{
+
+    color: #333;
+}
+
+
+.post p{
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.peo img{
+    width:50px;
+    height: 50px;
+}
+
+.wm{
+    width:200px;
+    height:200px;
+    padding-top:15px;
+    padding-left:90px;
+}
+
+
+@media screen and (max-width: 1020px) {
+
+
+.all{
+
+    width: 765px;
+}
+.going input{
+
+    border-radius:13px;
+}
+
+.gy{
+    width: 100%;
+    border-radius: 15px;
+}
+.post p{
+ padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+
+}
+}
+
+@media screen and (max-width: 760px) {
+
+
+.all{
+
+    width: 410px;
+}
+
+
+}
+
+@media screen and (max-width: 400px) {
+
+.all{
+
+    width: 355px;
+}
+
+}
+
+@media screen and (max-width: 390px) {
+
+.all{
+
+    width: 315px;
+}
+
+
+}

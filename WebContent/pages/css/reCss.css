@@ -1,0 +1,189 @@
+
+*{
+    margin:0;
+    padding:0;
+
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.cent {
+    width: 1920px;
+    margin: 0 auto;
+}
+.neiron {
+    width: 1620px;
+    margin: 0 auto;
+}
+.left_nei {
+    width: 600px;
+    height:850px;
+    background-image: url("../images/register-2.jpg");
+    background-size: contain;
+    float: left;
+}
+.right_nei{
+    width: 870px;
+    height:850px;
+    float: right;
+}
+.rig_form{
+    width: 480px;
+    height:760px;
+    margin-top: 90px;
+    float: left;
+
+}
+.rig_form p {
+    font-size:10px;
+}
+.rig_talble {
+    margin-top: 20px;
+}
+.rig_form>span {
+    font-size: 50px;
+}
+.top_li {
+    margin-bottom: 10px;
+}
+.rig_talble span {
+   font-size:30px;
+}
+.rig_talble input {
+    width:380px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.liji {
+    width: 384px;
+    height: 65px;
+    margin-top:60px;
+}
+.liji input {
+    width: 384px;
+    height: 65px;
+    border-radius: 10px;
+    border-style:none;
+    color:white;
+    font-size:20px;
+    background-color: rgba(231,0,18,1)
+}
+.bottom li {
+    margin-bottom: 50px;
+}
+.bottom li>span {
+    font-size:8px;
+}
+.bottom {
+    margin-top:15px;
+}
+.right_lef {
+    width: 180px;
+    height:760px;
+    margin-top: 90px;
+    float: right;
+    position:relative
+}
+
+.ma {
+    width: 137px;
+    height:157px;
+    position: absolute;
+    bottom:0px;
+    left:20px;
+
+}
+.ma p>a {
+    font-size:10px;
+
+}
+.ma p {
+    margin: 0;
+}
+.ma img {
+    width: 137px;
+    height:137px;
+}
+
+@media screen and (max-width:1800px){
+    /**
+     * 1366
+     */
+    .rig_talble span {
+       font-size:18px;
+    }
+    .cent {
+     width: 1366px;
+    }
+    .rig_form>span {
+    font-size: 33px;
+    }
+    .neiron {
+    width: 1166px;
+    margin: 0 auto;
+    }
+    .top_li {
+    margin-bottom: 7px;
+    }
+    .left_nei {
+    width: 453px;
+    height:646px;
+    }
+    .right_nei{
+    width: 579px;
+    height:646px;
+    float: right;
+    }
+    .rig_form{
+    width: 361px;
+    height:646px;
+    margin-top: 66px;
+    float: left;
+
+    }
+    .right_lef {
+    width: 135px;
+    height:565px;
+    margin-top: 66px;
+    float: right;
+    position:relative
+}
+    .rig_talble {
+    margin-top: 16px;
+    }
+    .rig_talble input {
+    width:258px;
+    height: 31px;
+    border-radius: 10px;
+    }
+    .liji {
+    width: 256px;
+    height: 43px;
+    margin-top:40px;
+    }
+
+    .liji input {
+    width: 256px;
+    height: 43px;
+    font-size:15px;
+    }
+    .bottom li {
+    margin-bottom: 25px;
+
+    }
+    .ma img {
+    width: 108px;
+    height:108px;
+
+    .ma p>a {
+    font-size:8px;
+
+}
+}
+
+
+}

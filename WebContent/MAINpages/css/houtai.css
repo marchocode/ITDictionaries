@@ -1,0 +1,130 @@
+/*
+* @Author: Marte
+* @Date:   2018-06-20 21:32:40
+* @Last Modified by:   Marte
+* @Last Modified time: 2018-06-24 21:08:07
+*/
+body{
+    margin:0;
+    padding:0;
+    background-color: #E9E9E9;
+}
+
+li{
+    list-style: none;
+}
+
+.da{
+    width:1920px;
+    height:100%;
+}
+
+.ding{
+    width: 1920px;
+    height: 80px;
+    background-color: #F44236;
+    color:white;
+
+}
+
+
+.ding span{
+font-size:27px;
+line-height:80px;
+margin-left:23px;
+}
+.zuo{
+    float: left;
+}
+
+.zuos{
+    width:340px;
+    height:200px;
+
+
+
+}
+
+.zuos img{
+    width:340px;
+    height:200px;
+}
+.zuos span{
+    width:270px;
+    height:30px;
+
+}
+
+.zuox{
+     width:340px;
+     background-color: white;
+	    text-align: center;
+	    font-size:21px;
+     color:black;
+}
+.zuox i{
+
+    // font-size:23px;
+
+}
+.zuox li{
+
+    height:100px;
+    line-height:100px;
+    border-bottom: 1px solid gray;
+}
+
+.you{
+    float: left;
+    margin-top:30px;
+}
+
+.you li{
+    width:270px;
+    height:110px;
+    float: left;
+    margin-left:96px;
+    text-align:center;
+    color:white;
+    font-size:20px;
+}
+
+.you span {
+    line-height: 110px;
+
+}
+
+.r{
+    background-color: #EA1E63;
+}
+
+.b{
+    background-color: #00BCD5;
+}
+
+.g{
+    background-color: #8BC24A;
+}
+
+.y{
+    background-color: #FF9700;
+}
+
+#i{
+    font-size:30px;
+}
+#m{
+    font-size:30px;
+}
+#z{
+    font-size:33px;
+}
+#x{
+    font-size:37px;
+}
+#l{
+    font-size:25px;
+}
+#y{
+    font-size:38px;
+}

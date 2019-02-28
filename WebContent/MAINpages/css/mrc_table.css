@@ -1,0 +1,13 @@
+/*
+* @Author: Marte
+* @Date:   2018-06-24 22:35:38
+* @Last Modified by:   Marte
+* @Last Modified time: 2018-06-24 23:35:35
+*/
+.tab {
+    width: 1580px;
+    height:900px;
+    background-color: white;
+    float:left;
+    position: relative;
+}

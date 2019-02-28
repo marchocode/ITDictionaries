@@ -1,0 +1,267 @@
+*{
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration: none;
+    color:#666;
+}
+
+.icon {
+   width: 1.5em; height: 1.5em;
+   vertical-align: -0.15em;
+   fill: currentColor;
+   overflow: hidden;
+
+}
+
+.nei {
+    position: absolute;
+    position: fixed;
+    z-index: 99999;
+    width: 700px;
+    height: 550px;
+   background-color:rgba(255,255,255,1);
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   margin: auto;
+   box-shadow: 2px 2px 5px #CCC;
+   display: none;
+
+}
+.top_nei {
+    width: 100%;
+    height:95px;
+    position:relative;
+}
+.cha{
+
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+    float: right;
+}
+.cha:hover{
+    background-color: pink;
+    cursor: pointer;
+}
+.top_nei img {
+    position: absolute;
+    top:22px;
+    left: 290px;
+}
+.bottom_nei {
+    width:100%;
+    height: 458px;
+}
+
+.log {
+    width: 100%;
+    height:35px;
+}
+.log2{
+    width: 100%;
+    height:35px;
+    margin-top: 45px;
+    text-align: center;
+
+}
+.log2>span{
+    font-size: 30px;
+    font-weight: bold;
+}
+.log2>a{
+    font-size: 20px;
+    color:#666;
+}
+.inpu {
+    width: 100%;
+    height:60px;
+    margin-top:40px;
+    text-align:center;
+    position:relative;
+}
+
+.input_ico {
+    position:absolute;
+    top:20px;
+    left:570px;
+}
+.inpu2 {
+    margin-top:28px;
+}
+.inpu input {
+    width: 80%;
+    height:60px;
+    border: solid 1px #666;
+    border-radius: 10px;
+    padding-left: 20px;
+    font-size:16px;
+
+}
+.butto input {
+    width: 80%;
+    height:60px;
+    border-style: none;
+    font-size:23px;
+    background-color: #1bab56;
+    color:white;
+
+}
+.bom {
+    width: 534px;
+    margin:25px auto;
+    height:17px;
+    font-size:15px;
+
+}
+.right{
+    float: right;
+}
+@media screen and (max-width:1800px){
+
+.nei{
+     width: 504px;
+    height: 396px;
+}
+.top_nei {
+
+    height:70px;
+}
+.cha{
+
+    width: 35px;
+    height: 35px;
+
+    font-size: 20px;
+
+}
+.bottom_nei {
+    height: 329px;
+}
+.log {
+    height:22px;
+}
+.log2{
+    width: 100%;
+    height:22px;
+    margin-top: 30px;
+
+}
+.inpu input {
+    height:40px;
+
+    border-radius: 7px;
+    padding-left: 14px;
+    font-size:12px;
+
+}
+.inpu {
+    height:45px;
+    margin-top:30px;
+
+}
+.butto input {
+    width: 80%;
+    height:40px;
+    border-style: none;
+    font-size:16px;
+}
+.inpu2 {
+    margin-top:18px;
+}
+.bom {
+    width: 80%;
+    margin:15px auto;
+    font-size:12px;
+
+}
+.input_ico {
+    top:10px;
+    left:420px;
+}
+.top_nei img {
+    width:15%;
+    top:22px;
+    left: 222px;
+}
+}
+@media screen and (max-width:1360px){
+
+.nei{
+     width: 378px;
+    height: 289px;
+}
+.top_nei {
+
+    height:53px;
+}
+.cha{
+
+    width: 26px;
+    height: 26px;
+
+    font-size: 15px;
+
+}
+.bottom_nei {
+    height: 247px;
+}
+.log {
+    height:16px;
+}
+.log2{
+    width: 100%;
+    height:15px;
+    margin-top: 22px;
+
+}
+.inpu input {
+    height:30px;
+
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size:12px;
+
+}
+.inpu {
+    height:32px;
+    margin-top:23px;
+
+}
+.butto input {
+    width: 80%;
+    height:30px;
+    font-size:12px;
+}
+.inpu2 {
+    margin-top:14px;
+}
+.bom {
+    width: 80%;
+    margin:11px auto;
+    font-size:12px;
+
+}
+.input_ico {
+    top:7px;
+    left:315px;
+}
+.top_nei img {
+    width:15%;
+    top:22px;
+    left: 166px;
+}
+.log2>span{
+    font-size: 22px;
+    font-weight: bold;
+}
+.log2>a{
+    font-size: 14px;
+    color:#666;
+}
+
+}

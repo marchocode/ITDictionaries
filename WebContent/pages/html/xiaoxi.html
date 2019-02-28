@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Document</title>
+     <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+      <link href="../css/fileinput.css" media="all" rel="stylesheet" type="text/css" />	
+    <link rel="stylesheet" type="text/css" href="../css/xiaoxi-1.css">
+     <link rel="stylesheet" type="text/css" href="../css/login.css">
+       <link href="../css/commenter.css" media="all" rel="stylesheet" type="text/css" />	
+    <script src="../fonts/font_login/iconfont.js"></script>
+     <script src="../fonts/fonts-xiaoxi/iconfont.js"></script>
+<style type="text/css">
+    
+
+#main-scrollbar {
+          position: fixed;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+        }
+        
+        
+  video{
+  width:100%;
+  
+  }
+ .textNei{
+ 	width:100%;
+ }   
+ 
+         .dzfx{
+        width: 100%;
+        padding: 20px;
+         float: left;
+    }
+    .dzfx .icon {
+   width: 2.5em; height: 2.5em;
+    cursor: pointer;
+ 
+}
+.dzfx .zhi-d-1{
+    display: inline-block;
+    font-size: 15px;
+    position: relative;
+    top: -5px;
+    left: 5px;
+    cursor: pointer;
+}
+.dzfx .zhi-d-2{
+    display: inline-block;
+    font-size: 15px;
+    position: relative;
+    top: -15px;
+     cursor: pointer;
+}
+ .dzfx .auto-pl .icon{
+     width: 3em; height: 3em;
+ }
+.dzfx .zhi-d-3{
+    display: inline-block;
+    font-size: 15px;
+    position: relative;
+    top: -9px;
+    left: 3px;
+     cursor: pointer;
+}
+    .left-dz{
+        width: 33%;
+        text-align: left;
+     float: left;
+    
+    }
+     .auto-pl{
+        width: 33%;
+        text-align: center;
+         float: left;
+         
+    }
+     .right-fx{
+        width: 33%;
+        text-align: right;
+         float: left;
+
+    }
+    #idZhi{
+    display: none;
+    }
+    .jieli span{
+    display: none;
+    }
+  
+.chap{
+	position:relative;
+    z-index: 999999;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+   top: -40px;
+ left: 830px; 
+   color:#666;
+   
+}
+.chap:hover{
+	
+    background-color: #337ab7;
+    color:white;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:1020px){
+.chap{
+  left: 700px; 
+
+}
+}
+@media screen and (max-width:760px){
+.chap{
+top: -45px;
+  left: 350px; 
+
+}
+}
+@media screen and (max-width:400px){
+.chap{
+  left: 320px; 
+
+}
+
+}
+@media screen and (max-width:390px){
+.chap{
+  left: 280px; 
+
+}
+
+}
+
+</style>
+</head>
+<body>
+<div id="logok"><img id="logo1" src="../images/LOGO1.png"></div>
+<div class="beijing" id="bbb" style="width: 100%;height: 100%;position: fixed;background-color: rgba(196,196,196,0.5);z-index: 9999;display: none;"></div>
+<nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+        <span class="sr-only"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <a href="#" class="navbar-brand nav-title"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-menu">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="cative login" id="login-dh"><a href="#">登录</a></li> 
+        <li class="cative"><a href="zixun-1.jsp">IT资讯</a></li>
+        <li class="cative"><a href="mingren.jsp">IT名人馆</a></li>
+        <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    知识竞赛
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="zhishi.jsp">知识答辩</a></li>
+                    <li><a href="zhishi1.jsp">知识升级</a></li>
+                    <li><a href="zhishi2.html">知识积分</a></li>
+                    <li><a href="zhishi4.html">知识排行</a></li>
+                </ul>
+          </li>
+ 
+
+
+        <li class="cative"><a href="search2.html">名词查找</a></li>
+        <li class="dropdown active">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    消息圈
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="xiaoxi.html">发表</a></li>
+              
+                    <li><a href="xiaoxi-2.html">我的消息圈</a></li>
+<!--                     <li><a href="xiaoxi-3.html">IT表白墙</a></li> -->
+                </ul>
+          </li>
+        <li class="cative"><a href="liuyan.html">留言</a></li>
+        <li class="cative"><a href="geren.html">个人中心</a></li> 
+      </ul>
+    </div>
+  </div>
+</nav> 
+
+
+<div class="nei">
+        <div class="top_nei">
+            <img src="../images/logo.png" alt="">
+            <div class="cha"><Span>&chi;</Span></div>
+        </div>
+        <div class="bottom_nei">
+            <!--表单区域-->
+            <div class="log">
+
+            </div>
+            <div class="log2">
+                <span>Login  </span>
+                <a href="">IT辞典</a>
+            </div>
+
+            <!--登录输入框-->
+            <div class="inpu">
+                <input id="user" type="text" name="" placeholder="UserName">
+
+
+                <svg class="icon input_ico" aria-hidden="true">
+                  <use xlink:href="#icon-account"></use>
+                </svg>
+
+
+            </div>
+
+             <div class="inpu inpu2">
+                <input id="pw" type="password" name="" placeholder="Password">
+                 <svg class="icon input_ico" aria-hidden="true">
+                  <use xlink:href="#icon-password"></use>
+                </svg>
+
+            </div>
+
+             <div class="inpu inpu2 butto">
+                <input id="dlx" type="button" name="" value="登  录">
+
+            </div>
+
+
+            <!--登录注册小字部分-->
+
+             <div class="log bom">
+                <span id="zhuce"><a href="register.html" target="blank">注册</a></span>
+                <span class="right"><a href="">忘记密码</a></span>
+            </div>
+
+
+        </div>
+    </div>
+
+             
+               <div class="_back">
+                <button  style="width:50%;margin-left: 25%;margin-top: 10px;" type="submit" class="btn btn-primary">评论区</button>
+               
+               <div class="chap"><Span>&chi;</Span></div> 
+<input  id="text1" type="text" style="width:100%;height:50px;padding:20px;margin-top: 30px " />
+ <button id="fabiaos1" style="width:100%;margin-bottom: 10px;margin-top: 10px;" type="submit" class="btn btn-primary">Submit</button>
+<div class="jie1">
+ 
+</div>
+
+    </div>
+
+
+<main id="main-scrollbar" data-scrollbar>
+    <div class="all">
+
+            <form id="uploadForm" enctype="multipart/form-data" method="post" name="fileinfo">
+            <input id="file-0a" class="file" type="file" multiple data-min-file-count="1" name="file"/>
+            <input  id="text" type="text" style="width:100%;height:50px;padding:20px;" name = "text"/>
+            <br>
+        </form>
+             <button id="fabiaos" style="width:100%;" type="submit" class="btn btn-primary">Submit</button>
+              
+
+<div class="textNei">
+
+
+</div>
+
+    </div>
+    </main>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/smooth-scrollbar.js"></script>
+<script src="../js/fileinput.js" type="text/javascript"></script>
+<script src="../js/fileinput_locale_zh.js" type="text/javascript"></script>
+<script>
+
+$.ajax({
+    type : "GET",
+    url : "../../MAINpages/sion.jsp",
+    dataType : "text",
+    success : function (data) {
+    	var zhi = $.trim(data);
+    	
+    if(zhi != "null"){	
+      
+    	$("#login-dh").css({
+    		
+    		"display":"none"
+    	})
+    }
+    }
+});
+
+
+$.ajax({
+    type : "GET",
+    url : "../../MAINpages/xiaoxi/xiaoxiGET.jsp",
+    dataType : "json",
+    success : function (data) {
+    	for(var i=0;i<data.length;i++){
+    		var mp41 = data[i].img
+    		var mp4 = mp41.substr(mp41.lastIndexOf("."));
+    		if(mp4 == ".mp4"){
+    			var html = "<div class='o'><div class='Done gy'><div class='one'>"+
+                "<div class='peo'><img src='../../../images/touxiang/"+data[i].imgt+"'></div>"+
+                "<div class='wm'><a>"+data[i].name+"</a></div></div><div class='img_fa'>"+
+                "<video src='../../../images/"+data[i].img+"' controls='controls'>"+
+                "</div><div class='post'>"+
+                "<p>"+data[i].text+"</p><span id='idZhi'>"+data[i].num+"</span>"+
+                "</div><div class='dzfx'><div class='left-dz'><a  href='javascript:;'onclick='getgifo("+data[i].num+","+data[i].good+")'><svg class='icon' aria-hidden='true'>"+
+         "<use xlink:href='#icon-dianzan'></use></svg><span class='zhi-d-1'>"+data[i].good+"</span></a>"+
+         "</div><div class='auto-pl'><a  href='javascript:;'onclick='getCm("+data[i].num+","+data[i].comment+")'><svg class='icon' aria-hidden='true'>"+
+         "<use xlink:href='#icon-uqur'></use></svg><span class='zhi-d-2'>"+data[i].comment+"</span></a>"+
+         "</div><div class='right-fx'><a  href='javascript:;'onclick='getfx("+data[i].num+")'><svg class='icon' aria-hidden='true'>"+
+         "<use xlink:href='#icon-tableshare'></use></svg><span class='zhi-d-3'>"+data[i].fenx+"</span></a>"+
+       "</div></div></div></div>"	
+    			 $(".textNei").append(html);
+    		}else{
+    			var html = "<div class='o'><div class='Done gy'><div class='one'>"+
+                "<div class='peo'><img src='../../../images/touxiang/"+data[i].imgt+"'></div>"+
+                "<div class='wm'><a>"+data[i].name+"</a></div></div><div class='img_fa'>"+
+                "<img src='../../../images/"+data[i].img+"'></div><div class='post'>"+
+                "<p>"+data[i].text+"</p><span id='idZhi'>"+data[i].num+"</span>"+
+                "</div><div class='dzfx'><div class='left-dz'><a  href='javascript:;'onclick='getgifo("+data[i].num+","+data[i].good+")'><svg class='icon' aria-hidden='true'>"+
+         "<use xlink:href='#icon-dianzan'></use></svg><span class='zhi-d-1'>"+data[i].good+"</span></a>"+
+         "</div><div class='auto-pl'><a  href='javascript:;'onclick='getCm("+data[i].num+","+data[i].comment+")'><svg class='icon' aria-hidden='true'>"+
+         "<use xlink:href='#icon-uqur'></use></svg><span class='zhi-d-2'>"+data[i].comment+"</span></a>"+
+         "</div><div class='right-fx'><a  href='javascript:;'onclick='getfx("+data[i].num+")'><svg class='icon' aria-hidden='true'>"+
+         "<use xlink:href='#icon-tableshare'></use></svg><span class='zhi-d-3'>"+data[i].fenx+"</span></a>"+
+        "</div></div></div></div>"
+         $(".textNei").append(html);	
+        
+    		}
+    		
+    		
+
+   
+	
+    	}
+    	
+    }
+});
+
+
+  
+        $(".login").click(function(){
+            
+            $("#bbb").css({"display":"block"});
+        $(document.body).css({"overflow-y":"hidden"});
+
+            $(".nei").show(1100);
+
+        })
+
+        $(".cha").click(function(){
+
+            $("#bbb").css({"display":"none"});
+        $(document.body).css({"overflow-y":"auto"});
+
+            $(".nei").hide(1000);
+        })
+
+        $("#zhuce").click(function(){
+
+            $("#bbb").css({"display":"none"});
+        $(document.body).css({"overflow-y":"auto"});
+        $(".nei").hide(1000);
+        })
+
+
+        $(".left-menuxian").click(function(){
+
+            $(".left-menu").animate({width: 'toggle'},700);
+            $(".left-menuxian").css({
+
+                "display":"none"
+            });
+
+        })
+
+        $(".left-guanbi").click(function(){
+
+            $(".left-menu").animate({width: 'toggle'},700);
+            $(".left-menuxian").css({
+
+                "display":"block"
+            });
+
+        })
+
+        Scrollbar.initAll({
+            speed: 3,
+            overscrollEffect: 'bounce',
+            overscrollEffectColor: '#d2527f'
+        });
+        
+     
+        $(document).ready(function() {
+            $("#test-upload").fileinput({
+                'showPreview' : false,
+                'allowedFileExtensions' : ['jpg', 'png','gif'],
+                'elErrorContainer': '#errorBlock'
+            });
+        });	
+      
+		
+        
+        
+        
+        $("#fabiaos").click(function(){
+        	
+        	
+        	
+        	  $.ajax({
+      	        type : "GET",
+      	        url : "../../MAINpages/sion.jsp",
+      	        dataType : "text",
+      	        success : function (data) {
+      	        	var zhi = $.trim(data);
+      	        	
+      	        if(zhi != "null"){
+      	        	
+      	          var tu = $("#file-0a").val();
+      	        
+      	        var text = $("#text").val();
+      	     
+      	        
+      	        if(tu.length == 0 || text.length == 0){
+      	        	
+      	        	alert("我最亲爱的用户 您没有输入完整的信息 请核对好图片和文字信息");
+      	        	
+      	        }else{
+      	        	
+      	        	
+      	        	 var formData = new FormData($( "#uploadForm" )[0]);  
+      	        	
+      				$.ajax({
+      		    	   	
+      	   				cache: false,
+      	   				 
+      	   				type: "POST",
+      	   				 
+      	   				url:"../../MAINpages/xiaoxi/Xiaoxi1.jsp",
+      	   				
+      	   			 	data: formData,  
+      	             	
+      	   			 	async: false,  
+      	             	
+      	   			 	cache: false,  
+      	             	
+      	   			 	contentType: false,  
+      	             	
+      	   			 	processData: false,  
+      	   				 
+      	   				error: function(request) {
+      	   				 
+      	   				alert("发送请求失败！");
+      	   				 
+      	   				}
+      		})
+      		$.ajax({
+      		    	   	
+      	   				cache: false,
+      	   				 
+      	   				type: "POST",
+      	   				 
+      	   				url:"../../MAINpages/xiaoxi/Xiaoxi1Text.jsp",
+      	   				
+      	   			 	data: {text:text},  
+      	             	
+      	   			 	async: false,  
+      	   				 
+      	   				error: function(request) {
+      	   				 
+      	   				alert("发送请求失败！");
+      	   				 
+      	   				}
+      		})
+      		
+      		window.location.reload();
+      	        }
+      	        
+      	        	
+      	        	
+      	        }else{
+      	        	
+      	        	alert("您必须先登录才能发表");
+      	        	
+      	        	
+      	        }		        	
+      	        	
+      	        }
+        	  
+        })
+      	    });
+        	
+        	
+    		function getgifo(str,gd){
+    	
+    	
+    			 $.ajax({
+    	      	    type : "GET",
+    	      	    url : "../../MAINpages/sion.jsp",
+    	      	    dataType : "text",
+    	      	    success : function (data) {
+    	      	       
+    	      	    var zhi = $.trim(data);
+    	      	    if(zhi != "null"){
+    	      	      
+    	      	    	
+    	      	    	
+    	      	    	
+    	      	    	$.ajax({
+          		    	   	
+          	   				cache: false,
+          	   				 
+          	   				type: "POST",
+          	   				 
+          	   				url:"../../MAINpages/xiaoxi/Xiaoxi1dz.jsp",
+          	   				
+          	   			 	data: {id:str},  
+          	             	
+          	   			 	async: false,  
+          	   				 
+          	   				error: function(request) {
+          	   				 
+          	   				alert("发送请求失败！");
+          	   				 
+          	   				},
+          	   			 	success : function (data) {
+          	   			   	var zhi = $.trim(data);
+          	   			window.location.reload();
+// 							alert(gd);
+          	   				
+//           	   			$(".zhi-d-1").each(function(){
+//           	   			if($(this).text() == gd){
+//           	   			$(this).text(zhi)
+//           	   			}
+          	   				
+//           	   				});
+							
+							
+          	   			 	}
+          	   			 	})	
+    	      	    	
+    	      	    	
+    	      	        }else{
+    	      	        alert("请先登录 才能点赞");	
+    	      	        }
+    			 }
+    		})
+    			
+    		}
+    		
+    		
+    		
+    		function getfx(str){
+    		
+    		 $.ajax({
+ 	      	    type : "GET",
+ 	      	    url : "../../MAINpages/sion.jsp",
+ 	      	    dataType : "text",
+ 	      	    success : function (data) {
+ 	      	       
+ 	      	    var zhi = $.trim(data);
+ 	      	    if(zhi != "null"){
+    		
+					$.ajax({
+      		    	   	
+      	   				cache: false,
+      	   				 
+      	   				type: "POST",
+      	   				 
+      	   				url:"../../MAINpages/xiaoxi/Xiaoxi1Fx.jsp",
+      	   				
+      	   			 	data: {id:str},  
+      	             	
+      	   			 	async: false,  
+      	   				 
+      	   				error: function(request) {
+      	   				 
+      	   				alert("发送请求失败！");
+      	   				 
+      	   				},
+      	   			success : function (data) {
+      	   				alert("分享成功");
+      	   			window.location.reload();
+      	   			}
+      	   		
+      		})
+    				
+    		
+ 	      	    }else{
+ 	      	    	alert("您必须先登录才能分享至您的消息圈");
+ 	      	    }
+ 	      	    }
+    		 })
+    		}
+    		
+    		
+    		
+    		function getCm(str){
+    		
+    			$.ajax({
+    	 	      	    type : "GET",
+    	 	      	    url : "../../MAINpages/sion.jsp",
+    	 	      	    dataType : "text",
+    	 	      	    success : function (data) {
+    	 	      	    var zhi = $.trim(data);
+    	 	      	    if(zhi != "null"){	
+    	 	      	    	
+    	 	      	    	
+    	 	      	 	$.ajax({
+    	    			    type : "POST",
+    	    			    url : "../../MAINpages/xiaoxi/xiaoxiPGET.jsp",
+    	    			    data:{id:str},
+    	    			    dataType : "json",
+    	    			    error: function(request) {
+    	      	   				alert("发送请求失败！");
+    	      	   				},
+    	    			    success : function (data) {
+//    	     			    	alert(data[0].username);
+									
+							if(data.length == 0){
+								
+								
+								var html1 = "<li class='jieli'>"+
+	    			            "<span>"+str+"</span>"+
+	    			              "</li>"
+	    			    $(".jie1").append(html1);
+								
+								
+							}		
+									
+									
+									
+    	    			    	for(var i=0;i<data.length;i++){
+    	    			    		
+    	    			    		$.ajax({
+    	    		    			    type : "POST",
+    	    		    			    data:{username:data[i].username,nei:data[i].comment,id:data[i].id},
+    	    		    			    url : "../../MAINpages/User/UserImg.jsp",
+    	    		    			    dataType : "json",
+//    	     		    			    error: function(request) {
+//    	     		      	   				alert("发送请求失败1！");
+//    	     		      	   				},
+    	    		    			    success : function (zhi) {
+    	    		    			  		
+    	    		    			    	var html1 = "<li class='jieli'>"+
+    	    	    			            "<img src='../../../images/touxiang/"+zhi.img+"'>"+
+    	    	    			            "<div>"+zhi.username+"</div><p>"+zhi.nei+"</p><span>"+zhi.id+"</span>"+
+    	    	    			              "<br/><hr></li>"
+    	    	    			    $(".jie1").append(html1);
+    	    		    			    	
+    	    		    			    }
+    	    			    		})
+    	    		
+    	    			    	}
+    	    			    	
+    	    			    	  $("#bbb").css({"display":"block"});
+    	    	    		        $(document.body).css({"overflow-y":"hidden"});
+    	    	    		            $("._back").fadeIn(500);
+    	    	    		            $(".chap").fadeIn(200);
+    	    	    		}
+    	    			    	
+    	    			    
+    	    			})
+    	    		
+    	  	
+    	 	      	    	
+    	 	      	    	
+    	 	      	    }else{
+    	 	      	    	
+    	 	      	    alert("您必须先登录才能查看评论");
+    	 	      	    }
+    	 	      	    }
+    			})
+    	 	      	    
+    			
+    		}				
+
+    			
+    		
+    		
+    		
+    		$(".chap").click(function(){
+    			  $("#bbb").css({"display":"none"});
+        			$(document.body).css({"overflow-y":"auto"});
+           			 $("._back").fadeOut(500);
+           			$(".chap").hide(1000);
+           			$(".jie1").empty();
+           			window.location.reload();
+    		})
+    		$("#fabiaos1").click(function(){
+    			
+    		var num =	$(".jieli span").html();
+//     		alert(num);
+    			var text = $("#text1").val();
+    			if(text.length == 0){
+    				alert("你没有输入任何内容");
+    			}else{
+    				$.ajax({type:"POST",data:{text:text,id:num}, dataType:"json",
+    		url : "../../MAINpages/xiaoxi/AddComment.jsp", success : function (data) {
+    			var html1 = "<li class='jieli'>"+
+	            "<img src='../../../images/touxiang/"+data.img+"'>"+
+	            "<div>"+data.username+"</div><p>"+data.text+"</p>"+
+	              "<br/><hr></li>"
+	    $(".jie1").prepend(html1);}})
+// 	    $(".zhi-d-2").each(function(){
+//           	   			if($(this).text() == gd){
+//           	   			$(this).text(zhi)
+//           	   			}
+    			}
+    		})
+    		
+    		
+    		$("#dlx").click(function(){
+	
+	var username = $("#user").val();
+	
+	var password = $("#pw").val();
+	
+	if(username.length == 0 || password.length == 0){
+		
+		alert("请输入完整的信息");
+	
+	}else{
+		
+$.ajax({
+			 
+				
+				cache: false,
+				 
+				type: "POST",
+				 
+				url:"../../MAINpages/Login.jsp",
+				
+				datatype:"text",
+				 
+				data:{name:username,password:password},
+				 
+				async: false,
+				 
+				error: function(request) {
+				 
+				alert("发送请求失败！");
+				 
+				},
+				 
+				success: function(data) {
+		
+			var zhi = $.trim(data);
+					
+			if(zhi == "成功"){
+				
+				window.location.reload();
+				
+			}else{
+				
+				alert(zhi)
+			}
+					
+				
+				}
+				});
+		
+	}
+	
+		
+	
+	
+})        
+	
+    		
+    		
+ </script> 
+</body>
+</html>

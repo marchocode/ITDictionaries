@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <!--启用响应式-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>欢迎来到知识积分界面</title>
+     <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../css/inte.css">
+    <link rel="stylesheet" type="text/css" href="../css/login.css">
+    <script src="../fonts/font_login/iconfont.js"></script>
+    <style>
+.answer{
+color:white;
+}
+         #logok{
+  position:absolute;
+  position: fixed;
+  top: 5px;
+  width: 200px;
+  height: 50px;
+  z-index: 9991;
+}
+#logo1{
+  position:absolute;
+  width: 100%;
+  z-index: 9991;
+}
+    </style>
+</head>
+<body>
+<div class="beijing" id="bbb" style="width: 100%;height: 100%;position: fixed;background-color: rgba(196,196,196,0.5);z-index: 9999;display:none;"></div>
+
+<div id="logok"><img id="logo1" src="../images/LOGO1.png"></div>
+
+<nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+
+        <span class="sr-only"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <a href="#" class="navbar-brand nav-title"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-menu">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="cative login" id="login-dh"><a href="#">登录</a></li>
+        <li class="cative"><a href="zixun-1.jsp">IT资讯</a></li>
+        <li class="cative"><a href="mingren.jsp">IT名人馆</a></li>
+        <li class="dropdown active">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    知识竞赛
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="zhishi.jsp">知识答辩</a></li>
+                    <li><a href="zhishi1.jsp">知识升级</a></li>
+                    <li ><a href="zhishi2.html">知识积分</a></li>
+                    <li><a href="zhishi4.html">知识排行</a></li>
+                </ul>
+          </li>
+
+
+
+        <li class="cative"><a href="search2.html">名词查找</a></li>
+        <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    消息圈
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="xiaoxi.html">发表</a></li>
+              
+                    <li><a href="xiaoxi-2.html">我的消息圈</a></li>
+<!--                     <li><a href="xiaoxi-3.html">IT表白墙</a></li> -->
+                </ul>
+          </li>
+        <li class="cative"><a href="liuyan.html">留言</a></li>
+        <li class="cative"><a href="geren.html">个人中心</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="nei">
+        <div class="top_nei">
+            <img src="../images/logo.png" alt="">
+            <div class="cha"><Span>&chi;</Span></div>
+        </div>
+        <div class="bottom_nei">
+            <!--表单区域-->
+            <div class="log">
+
+            </div>
+            <div class="log2">
+                <span>Login  </span>
+                <a href="">IT辞典</a>
+            </div>
+
+            <!--登录输入框-->
+            <div class="inpu">
+                <input id="user" type="text" name="" placeholder="UserName">
+
+
+                <svg class="icon input_ico" aria-hidden="true">
+                  <use xlink:href="#icon-account"></use>
+                </svg>
+
+
+            </div>
+
+             <div class="inpu inpu2">
+                <input id="pw" type="password" name="" placeholder="Password">
+                 <svg class="icon input_ico" aria-hidden="true">
+                  <use xlink:href="#icon-password"></use>
+                </svg>
+
+            </div>
+
+             <div class="inpu inpu2 butto">
+                <input id="dlx" type="button" name="" value="登  录">
+
+            </div>
+
+
+            <!--登录注册小字部分-->
+
+             <div class="log bom">
+                <span id="zhuce"><a href="register.html" target="blank">注册</a></span>
+                <span class="right"><a href="">忘记密码</a></span>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+    <div class="outer">
+
+        <!--灰色大块-->
+        <div class="se_box">
+
+            <!--头像块-->
+            <div class="top_img">
+
+                <div class="top_te">
+
+                    <div class="toux">
+                    </div>
+                    <div class="name">
+                        <span id="userN"></span>
+                        <p id="gxqm"></p>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <!--答题大块；-->
+            <div class="answer">
+
+                <div class="small_box1">
+                    <div class="box1_top">
+                        <ul>
+                            <li>答对题数</li>
+                            <li>积分</li>
+                        </ul>
+                    </div>
+                    <div class="box1_buttom">
+                         <ul>
+                            <li><span id="dd"></span></li>
+                            <li class="ne" id="jf"><span></span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="small_box2">
+                   <div class="box1_top">
+                        <ul>
+                            <li>当前赛季</li>
+                            <li>上一赛季</li>
+                        </ul>
+                    </div>
+                    <div class="box1_buttom">
+                         <ul>
+                            <li><span id = "dwN"></span></li>
+                            <li class="ne" id = "dwS"><span></span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="small_box3">
+                     <div class="box1_top">
+                        <span>世界排行榜-答题积分</span>
+                    </div>
+                    <div class="box3_li">
+
+                        <table id="zhans">
+                           
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    
+    
+    $.ajax({
+        type : "GET",
+        url : "../../MAINpages/sion.jsp",
+        dataType : "text",
+        async: false,
+        success : function (data) {
+        	var zhi = $.trim(data);
+        	
+        if(zhi != "null"){
+          
+        	$("#login-dh").css({
+        		
+        		"display":"none"
+        	})
+        	
+        	
+        	 $.ajax({
+        type : "GET",
+        url : "../../MAINpages/zhishi/UserJF.jsp",
+        dataType : "json",
+        async: false,
+        success : function (data) {
+        	var gg = data.gxqm;
+        	if(gg.length > 13){
+        		var gxq = gg.substring(0,12);
+        		$("#gxqm").html(gxq+"......");
+        	}else if(gg == null){
+        		$("#gxqm").html('?');
+        	}else{
+        		$("#gxqm").html(gg);
+        	}
+			
+        	if(data.img == null){
+        		$(".toux").css({
+            		"background":"url('../../../images/touxiang/0.png')",
+            		"background-size":"cover"
+            		
+            	})
+        		
+        	}else{
+        		
+        		$(".toux").css({
+            		"background":"url('../../../images/touxiang/"+data.img+"')",
+            		"background-size":"cover"
+            		
+            	})	
+        		
+        	}
+			
+        	$("#userN").html(data.name);
+        	if(data.dd == null){
+        		$("#dd").html('?');
+        	}else{
+        		$("#dd").html(data.dd);
+        	}
+if(data.dwN == ""){
+	$("#dwN").html('?');	
+        	}else{
+     $("#dwN").html(data.dwN);	
+        	}
+if(data.jf == null){
+	$("#jf").html('?');
+}else{
+	$("#jf").html(data.jf);
+}
+if(data.dwS == null){
+	$("#dwS").html('?');
+}else{
+	$("#dwS").html(data.dwS);
+}
+    	
+        }
+        })
+        
+        $.ajax({
+        type : "GET",
+        url : "../../MAINpages/zhishi/Jfph.jsp",
+        dataType : "json",
+        async: false,
+        success : function (data) {
+        for(var i = 0;i<1;i++){
+        	
+        	var html = "<tr>"+
+            "<td class='one bg1'><span>"+(i+1)+"</span></td>"+
+            "<td class='two bg2'><span>"+data[i].name+"</span></td>"+
+            "<td class='three bg3'><span>"+data[i].jf+"</span></td>"+
+        	"</tr>";
+    	$("#zhans").append(html);
+        	
+        }
+for(var i = 1;i<4;i++){
+        	
+        	var html = "<tr>"+
+            "<td class='one'><span>"+(i+1)+"</span></td>"+
+            "<td class='two'><span>"+data[i].name+"</span></td>"+
+            "<td class='three'><span>"+data[i].jf+"</span></td>"+
+        	"</tr>";
+    	$("#zhans").append(html);
+        	
+        }	
+        	
+        }
+        })
+        	
+        }else{
+        	$("#gxqm").html("?");
+        	$("#userN").html("?");
+        	$("#dd").html("?");
+        	$("#jf").html("?");
+        	$("#dwN").html("?");
+        	$("#dwS").html("?");
+        	for(var i = 0;i<4;i++){
+            	
+            	var html = "<tr>"+
+                "<td class='one'><span>?</span></td>"+
+                "<td class='two'><span>?</span></td>"+
+                "<td class='three'><span>?</span></td>"+
+            	"</tr>";
+        	$("#zhans").append(html);
+            	
+            }	
+        	
+        }	 	
+        	
+
+        }
+    });
+    
+    
+    
+    
+   
+        
+        
+ $(".login").click(function(){
+		
+		$("#bbb").css({"display":"block"});
+	$(document.body).css({"overflow-y":"hidden"});
+
+		$(".nei").show(1100);
+
+	})
+
+	$(".cha").click(function(){
+
+		$("#bbb").css({"display":"none"});
+	$(document.body).css({"overflow-y":"auto"});
+
+		$(".nei").hide(1000);
+	})
+ 
+   $("#dlx").click(function(){
+	
+	var username = $("#user").val();
+	
+	var password = $("#pw").val();
+	
+	if(username.length == 0 || password.length == 0){
+		
+		alert("请输入完整的信息");
+	
+	}else{
+		
+$.ajax({
+			 
+				
+				cache: false,
+				 
+				type: "POST",
+				 
+				url:"../../MAINpages/Login.jsp",
+				
+				datatype:"text",
+				 
+				data:{name:username,password:password},
+				 
+				async: false,
+				 
+				error: function(request) {
+				 
+				alert("发送请求失败！");
+				 
+				},
+				 
+				success: function(data) {
+		
+			var zhi = $.trim(data);
+					
+			if(zhi == "成功"){
+				
+				window.location.reload();
+				
+			}else{
+				
+				alert(zhi)
+			}
+					
+				
+				}
+				});
+		
+	}
+	
+		
+	
+	
+})        
+    </script>
+</body>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html class="ui-page-login">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<script src="../../js/mui.min.js"></script>
+		<style>
+			.area {
+				margin: 20px auto 0px auto;
+			}
+			.mui-input-group:first-child {
+				margin-top: 20px;
+			}
+			.mui-input-group label {
+				width: 22%;
+			}
+			.mui-input-row label~input,
+			.mui-input-row label~select,
+			.mui-input-row label~textarea {
+				width: 78%;
+			}
+			.mui-checkbox input[type=checkbox],
+			.mui-radio input[type=radio] {
+				top: 6px;
+			}
+			.mui-content-padded {
+				margin-top: 25px;
+			}
+			.mui-btn {
+				padding: 10px;
+			}
+			
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<h1 class="mui-title">注册</h1>
+		</header>
+		<div class="mui-content">
+			<form id="allform" class="mui-input-group">
+				<div class="mui-input-row">
+					<input id='user' name="user" type="text" class="mui-input-clear mui-input" placeholder="用户名">
+				</div>
+				<div class="mui-input-row">
+					<input id='pw' name = "pw" type="text" class="mui-input-clear mui-input" placeholder="密码">
+				</div>
+				<div class="mui-input-row">
+					<input id='pw1' type="text" class="mui-input-clear mui-input" placeholder="请再次输入密码">
+				</div>
+				<div class="mui-input-row">
+					<input id='number' name="phone" type="email" class="mui-input-clear mui-input" placeholder="手机号">
+				</div>
+			</form>
+			<div class="mui-content-padded">
+				<button id='zc' class="mui-btn mui-btn-block mui-btn-primary">注册</button>
+			</div>
+		</div>
+		<button style="display:none" id='promptBtn' type="button" class="mui-btn mui-btn-blue mui-btn-outlined">输入对话框</button>
+<div id="info"></div>
+		
+		<script src="../../js/jquery-3.3.1.js"></script>
+		<script>
+		 var num="";
+		    
+		    $("#zc").click(function(){
+		    
+		    	var user = $("#user").val();
+		    	
+		    	var pw = $("#pw").val();
+		    	
+		    	var pw1 = $("#pw1").val();
+		    	
+		    	var number = $("#number").val();
+		    	
+		    	
+		    	if(user.length == 0 || pw.length == 0 || pw1.length == 0 || number.length == 0){
+		    		
+		    		alert("您没有输入完整的信息");
+		    	}else{
+		    		
+		    		if(user.length >=4 ){
+		    			
+		    			if(pw.length >= 7){
+		    				
+		    				if(pw1 == pw){
+		    					   
+		    					var regExp = /^(86)?((13\d{9})|(15[0,1,2,3,5,6,7,8,9]\d{8})|(18[0,5,6,7,8,9]\d{8}))$/;  	
+		    					
+		    		if (!regExp.test(number)){
+		    			
+		    			alert("我最亲爱的用户！ 您的手机号格式有误")
+		    			
+		    			
+		    		}else{
+		    			
+		   		
+		    			
+		     			$.ajax({      //最外层ajax
+		    	   			 
+		       				
+		       				cache: false,
+		       				 
+		       				type: "POST",
+		       				 
+		       				url:"../../../MAINpages/UserTrue.jsp",
+		       				
+		       				datatype:"text",
+		       				 
+		       				data:{user:user},
+		       				 
+		       				async: false,
+		       				 
+		       				success: function(data) { //最外层ajax返回值
+		       		
+		    				var zhi = $.trim(data);
+		       					
+		    				if(zhi == "成功"){
+		    		
+		    					alert("你的用户名已经被注册");
+		    				
+		    				}else{   //else ajax返回
+		    					
+		    					for(var i=0;i<4;i++){  
+		    		    			  
+		    	    				num+=Math.floor(Math.random()*10)  
+		    	    			
+		    	    			} 
+		    					
+		    					$.ajax({
+		    	    	   			 
+		    	       				
+		    	       				cache: false,
+		    	       				 
+		    	       				type: "POST",
+		    	       				 
+		    	       				url:"../../../MAINpages/Regym.jsp",
+		    	       				
+		    	       				datatype:"text",
+		    	       				 
+		    	       				data:{num:num,number:number},
+		    	       				 
+		    	       				async: false,
+		    	       				 
+		    	       				});
+		    		
+		    	    			
+		    	    		
+		    	    		
+		    					var ym = prompt("请输入验证码","请在此输入");
+		    	    		
+		    	    		if(ym.length == 0){
+		    	    			
+		    	    			alert("我最亲爱的用户！ 您的验证码没有输入")
+		    	    			
+		    	    		}else{   //else 验证码不等于0的情况下
+		    	    			
+		    	    			if(ym == num){
+		    	    				
+		    	    				
+		    	    				$.ajax({
+		    	    		    	   	
+		    	           				cache: false,
+		    	           				 
+		    	           				type: "POST",
+		    	           				 
+		    	           				url:"../../../MAINpages/Re.jsp",
+		    	           				
+		    	           				datatype:"text",
+		    	           				 
+		    	           				data:$("#allform").serialize(),
+		    	           				 
+		    	           				async: false,
+		    	     		 
+		    	           				success: function(data) {
+		    	           		
+		    	        				var zhi = $.trim(data);
+		    	           					
+		    	        				if(zhi == "注册成功"){
+		    	        					
+		    	        					window.open("../zixun-1.jsp");
+		    	        					
+		    	        				}else{
+		    	        					
+		    	        					alert(zhi);
+		    	        				}
+		    	           					
+		    	           				
+		    	           				}
+		    	           				});
+		    	    				
+		    	    				
+		    	    			}else{
+		    	    				
+		    	    				alert("我最亲爱的用户！ 您的验证码输入错误")
+		    	    			}
+		    		
+		       				
+		       				}    //else 验证码不等于0的情况下
+		       		
+		       				
+		       				}  //else ajax返回		
+		       				
+		     }  //最外层ajax返回值
+			
+		    			
+		     			})    //最外层ajax
+		    		
+		 					
+		      
+		    		}
+		    					
+		    				}else{
+		    					
+		    					alert("我最亲爱的用户！ 您两次输入的密码不一致")
+		    				}
+		    				
+		    				
+		    			}else{
+		    				
+		    				alert("我最亲爱的用户！ 您的密码必须最少为7个字符")
+		    			}
+		    			
+		    			
+		    		}else{
+		    			
+		    			alert("我最亲爱的用户！ 您的账号必须最少为四个字符")
+		    			
+		    		}
+		    		
+		    	}
+		    	
+		    })
+		    
+		</script>
+	</body>
+
+</html>

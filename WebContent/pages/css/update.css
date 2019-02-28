@@ -1,0 +1,134 @@
+.zll
+{
+
+    position: absolute;
+     position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999999;
+    margin: auto;
+    width: 420px;
+    height: 505px;
+    border-radius: 10px;
+    border: 1px solid rgb(214,215,217);
+    background-color: rgb(255,255,255);
+}
+
+.zll ul
+{
+    width: 378px;
+    height: 505px;
+    margin: auto;
+    // background-color: green;
+}
+
+.zll li
+{
+    width: 330px;
+    margin: auto;
+    list-style: none;
+}
+
+.zll input
+{
+    width: 330px;
+    height: 40px;
+    margin-top: 18px;
+    border-radius: 8px;
+    font-size: 15px;
+    color: rgba(110,111,112,0.8);
+    background-color: rgba(90, 89, 88, 0.1);
+    border: 1px solid #49afcd;
+}
+
+.zll select
+{
+    width:155px;
+    height: 25px;
+    margin-top: 10px;
+}
+
+.zll span
+{
+    font-size: 20px;
+    color: rgb(0,191,165);
+}
+
+@media screen and (max-width:760px)
+{
+    .zll
+    {
+        width: 315px;
+        height: 500px;
+    }
+
+    .zll ul
+    {
+        width: 273px;
+        height: 500px;
+    }
+
+    .zll li
+    {
+        width: 230px;
+
+    }
+
+    .zll input
+    {
+        width: 230px;
+        height: 38px;
+        margin-top: 18px;
+        font-size: 14px;
+    }
+
+    .zll select
+    {
+        width:215px;
+        height: 25px;
+        margin-top: 10px;
+    }
+
+    .zll span
+    {
+        font-size: 16px;
+
+    }
+}
+
+@media screen and (max-width:390px)
+{
+    .zll
+    {
+        width: 318px;
+        height: 500px;
+    }
+
+    .zll ul
+    {
+        width: 273px;
+        height: 500px;
+    }
+
+    .zll li
+    {
+        width: 230px;
+
+    }
+
+    .zll input
+    {
+        width: 230px;
+        height: 38px;
+        margin-top: 18px;
+        font-size: 14px;
+    }
+
+    .zll span
+    {
+        font-size: 16px;
+
+    }
+}
